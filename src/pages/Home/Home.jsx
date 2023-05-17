@@ -12,7 +12,7 @@ export default function Home({ colors }) {
     const [c0, c1, c2, c3, c4] = colors;
 
   return (
-      <div className='home'>
+      <div className='home' id='home'>
           <div className='bioContainer' style={{backgroundColor : c2}}>
               <div className='bioLinks'>
                   <Link to="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer">

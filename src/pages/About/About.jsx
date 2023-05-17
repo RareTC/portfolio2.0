@@ -10,7 +10,7 @@ import EmailIcon from "@mui/icons-material/Email";
 export default function About() {
   return (
     <>
-    <div className='aboutContainer'>
+    <div className='aboutContainer' id='about'>
       <div className='aboutPhoto'>
         <img src={AboutMe} alt='profile'/>
       </div>
