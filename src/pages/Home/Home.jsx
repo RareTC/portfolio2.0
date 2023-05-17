@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import Profile from "../../assets/profile.jpeg";
 import {Skills} from '../../components/Helpers/Skills';
 import {Link} from 'react-router-dom';
-// import './Home.css';
+import './Home.css';
 
 export default function Home() {
   return (
@@ -46,7 +46,7 @@ export default function Home() {
               </div>
           </div>
           <h1 className='skills'>Skills</h1>
-          <div class='list'>
+          <div className='list'>
               {Skills.map(skillCategory => (
                   <div className='item'>
                       <h2>{skillCategory.category}</h2>

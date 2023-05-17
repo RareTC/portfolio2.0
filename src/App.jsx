@@ -7,11 +7,12 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 
 function App() {
+  
   return (
-    <div className="App">
+<div className="App" style={{ backgroundColor: 'red' }}>
       <Navbar />
-        <About />
         <Home />
+        <About />
       <Footer />
     </div>
   );
