@@ -7,11 +7,11 @@ import './Sidebar.css';
 export default function Sidebar() {
   return (
     <div className="sidebar">
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/RareTC" target="_blank" rel="noopener noreferrer">
         <FaGithub />
         GitHub
       </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer">
         <FaLinkedin />
         LinkedIn
       </a>
