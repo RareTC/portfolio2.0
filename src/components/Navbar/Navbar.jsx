@@ -7,17 +7,19 @@ import ReorderIcon from '@mui/icons-material/Reorder';
 import Logo from '../../assets/tclogo.png';
 
 
-const defaultColor = ['#f5f7f6', '#66819a', '#a2b6c1','#2d3e55', '#263850']
-
-export default function Navbar( ) {
+export default function Navbar({ onColorChange }) {
   const [expandNavbar, setExpandNavbar] = useState(false);
-  const [selectedColor, setSelectedColor] = useState(defaultColor);
-  // console.log(selectedColor)
 
   const location = useLocation();
   useEffect(() => {
     setExpandNavbar(false)
   }, [location])
+
+  //function to change colors from nav bar select menu. Passed to App in this function 
+  const handleColorChange = (colors) => {
+    onColorChange(colors);
+    // console.log(colors)
+  };
 
   const colorValues = {
     green: ['#EEFF1E', '#58DA72', '#179c78', '#688482', '#1a222a'],
@@ -35,7 +37,7 @@ export default function Navbar( ) {
       </div>
       <div className="links">
 
-        <select onChange={(e) => setSelectedColor(e.target.value)}>
+      <select onChange={(colors) => handleColorChange(colors.target.value)}>
           <option value={colorValues.blue}>Blue</option>
           <option value={colorValues.green}>Green</option>
           <option value={colorValues.red}>Red</option>
@@ -47,7 +49,6 @@ export default function Navbar( ) {
         </Link>
         <Link to="home" smooth={true} duration={1000}> Home </Link>
         <Link to="/projects"> Projects </Link>
-        {/* <Link to="/experience"> Experience </Link> */}
         <Link to="/resume"> Resume </Link>
         <Link to="/contact"> Contact </Link>
         <Link to="about" smooth={true} duration={1000}> About </Link>

@@ -8,10 +8,12 @@ import {Skills} from '../../components/Helpers/Skills';
 import {Link} from 'react-router-dom';
 import './Home.css';
 
-export default function Home() {
+export default function Home({ colors }) {
+    const [c0, c1, c2, c3, c4] = colors;
+
   return (
       <div className='home'>
-          <div className='bioContainer'>
+          <div className='bioContainer' style={{backgroundColor : c2}}>
               <div className='bioLinks'>
                   <Link to="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer">
                       <LinkedInIcon />
@@ -24,7 +26,7 @@ export default function Home() {
                   </Link>
               </div>
               <div className='profilePhoto'>
-                  <img src={Profile} />
+                  <img src={Profile} alt='profile' />
               </div>
               <div className='about'>
                     <p className="typewriter">

@@ -2,7 +2,7 @@ import { FaHtml5, FaCss3, FaPython, FaBootstrap, FaNodeJs, FaReact } from 'react
 import { DiJavascript1, DiMongodb } from 'react-icons/di';
 // import { GrReactjs } from 'react-icons/gr';
 import { SiPostgresql, SiExpress, SiHeroku } from 'react-icons/si';
-import { BsBootstrap, BsSlack, BsTrello } from 'react-icons/bs';
+import { BsSlack, BsTrello } from 'react-icons/bs';
 import { TbBrandZoom } from 'react-icons/tb';
 
 
