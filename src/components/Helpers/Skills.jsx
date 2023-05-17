@@ -8,27 +8,16 @@ import { TbBrandZoom } from 'react-icons/tb';
 
 export const Skills = [
     {
-      category: "Front End",
       languages: [
         { name: "HTML", icon: <FaHtml5 /> },
         { name: "CSS", icon: <FaCss3 /> },
         { name: "JavaScript", icon: <DiJavascript1 /> },
         { name: "React.js", icon: <FaReact /> },
-        { name: "Python", icon: <FaPython /> },
-      ]
-    },
-    {
-      category: "Back End",
-      languages: [
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "MongoDB", icon: <DiMongodb /> },
         { name: "PostgreSQL", icon: <SiPostgresql /> },
         { name: "ExpressJS", icon: <SiExpress /> },
-      ]
-    },
-    {
-      category: "Other Skills",
-      languages: [
+        { name: "Python", icon: <FaPython /> },
         { name: "Trello", icon: <BsTrello /> },
         { name: "Slack", icon: <BsSlack /> },
         { name: "Heroku", icon: <SiHeroku /> },

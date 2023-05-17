@@ -1,11 +1,7 @@
 import React from 'react';
 import TypeWriter from "typewriter-effect";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from "@mui/icons-material/Email";
 import Profile from "../../assets/profile.jpeg";
 import {Skills} from '../../components/Helpers/Skills';
-import {Link} from 'react-router-dom';
 import './Home.css';
 
 export default function Home({ colors }) {
@@ -14,22 +10,11 @@ export default function Home({ colors }) {
   return (
       <div className='home' id='home'>
           <div className='bioContainer' style={{backgroundColor : c2}}>
-              <div className='bioLinks'>
-                  <Link to="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer">
-                      <LinkedInIcon />
-                  </Link>
-                  <Link to="https://github.com/RareTC" target='_blank' rel='noopener noreferrer'>
-                    <GitHubIcon />
-                  </Link>
-                  <Link to="/contact">
-                    <EmailIcon />
-                  </Link>
-              </div>
               <div className='profilePhoto'>
                   <img src={Profile} alt='profile' />
               </div>
               <div className='about'>
-                    <p className="typewriter">
+                    <p className="typewriter" style={{color: c4}}>
                     <TypeWriter
                     className="typewriter"
                         options={{
@@ -39,22 +24,22 @@ export default function Home({ colors }) {
                         }}
                     />
                     </p>
-                  <h2>Trevor Campbell</h2>
+                  <h2 style={{color: c0}}>Trevor Campbell</h2>
                   <div className='prompt'>
-                      <p>I bring creative and palatable projects to life with surgical precision and organized code. As a full stack developer experienced in
+                      <p style={{color:c4}}>I bring creative and palatable projects to life with surgical precision and organized code. As a full stack developer experienced in
                         several languages, I combine my passion for technology with my healthcare background to create seamless impactful solutions. 
                       </p>
                   </div>
               </div>
           </div>
-          <h1 className='skills'>Skills</h1>
           <div className='list'>
+          <h1 className='skills' style={{color:c3}}>Skills</h1>
               {Skills.map(skillCategory => (
                   <div className='item'>
-                      <h2>{skillCategory.category}</h2>
+                      {/* <h2>{skillCategory.category}</h2> */}
                       <div className='group'>
                           {skillCategory.languages.map(language => (
-                              <div className='icon-text'>
+                              <div className='icon-text' style={{color:c2}}>
                                   <h5>{language.icon}</h5>
                                   <span>{language.name}</span>
                               </div>

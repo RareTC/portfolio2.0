@@ -14,7 +14,7 @@ export default function Navbar({ onColorChange, colors }) {
   };
   
   const colorValues = {
-    green: ['#EEFF1E', '#58DA72', '#179c78', '#688482', '#1a222a'],
+    green: ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a'],
     purple: ['#EBE2EA', '#8388b2', '#5D468A', '#897085', '#2A1f64'],
     blue: ['#f5f7f6', '#66819a', '#a2b6c1','#2d3e55', '#263850'],
     red: ['#f4f7f2', '#cc7e85', '#bc3e52', '#d46161', '#383652']
@@ -29,14 +29,14 @@ export default function Navbar({ onColorChange, colors }) {
             <option value={colorValues.red}>Red</option>
             <option value={colorValues.purple}>Purple</option>
         </select>
-        <Link to='home' smooth={true} duration={1000}>
+        <Link to='home' smooth={true} duration={1000} className='navlink' style={{color:c4}}>
           <img className='logo' src={Logo} alt="" />
         </Link>
-        <Link to="home" smooth={true} duration={1000}> Home </Link>
-        <Link to="/projects"> Projects </Link>
-        <Link to="/resume"> Resume </Link>
-        <Link to="about" smooth={true} duration={1000}> About </Link>
-        <Link to="contact" smooth={true} duration={1000}> Contact </Link>
+        <Link to="home" smooth={true} duration={1000} className='navlink' style={{color:c4}}> Home </Link>
+        <Link to="/projects" className='navlink' style={{color:c4}}> Projects </Link>
+        <Link to="/resume" className='navlink' style={{color:c4}}> Resume </Link>
+        <Link to="about" smooth={true} duration={1000} className='navlink' style={{color: c4}}> About </Link>
+        <Link to="contact" smooth={true} duration={1000} className='navlink' style={{color:c4}}> Contact </Link>
       </div>
     </div>
   )

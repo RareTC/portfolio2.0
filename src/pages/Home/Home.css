@@ -1,4 +1,84 @@
-.profilePhoto > img {
-    height: 80px;
-    width: 80px;
+.home {
+    margin-top: 80px;
+    align-items: center;
+}
+
+.bioContainer {
+    padding-top: 50px;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profilePhoto {
+    width: 35%;
+    padding-bottom: 30%; 
+    position: relative;
+}
+
+.profilePhoto img {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 25px;
+    overflow: hidden;
+    border: solid 3px;
+}
+
+.typewriter {
+    font-size: 20px !important;
+}
+
+.about {
+    align-self: flex-start;
+    width: 60%;
+    align-items: left;
+    text-align: left;
+}
+
+
+.about h2 {
+    font-size: 60px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.prompt {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.skills {
+    font-size: 65px;
+    margin-bottom: 0;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.icon-text svg {
+    height: 30px;
+    width: 50px;
 }

@@ -7,7 +7,7 @@ import About from './pages/About/About';
 import Contact from './components/Contact/Contact';
 import Sidebar from './components/Sidebar/Sidebar';
 
-const defaultColor = ['#f5f7f6', '#66819a', '#a2b6c1','#2d3e55', '#263850'];
+const defaultColor = ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a']
 
 export default function App() {
   const [selectedColors, setSelectedColors] = useState(defaultColor);
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className="App" style={{ backgroundColor: c4 }}>
       <Navbar onColorChange={handleColorChange} colors={[c0, c1, c2, c3, c4]}/>
-      <Sidebar />
+      <Sidebar colors={[c0, c1, c2, c3, c4]}/>
       <Home colors={[c0, c1, c2, c3, c4]}/>
       <About />
       <Contact />
