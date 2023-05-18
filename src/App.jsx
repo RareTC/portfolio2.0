@@ -25,7 +25,6 @@ export default function App() {
       <Sidebar colors={[c0, c1, c2, c3, c4]}/>
       <Home colors={[c0, c1, c2, c3, c4]}/>
       <About />
-      <Contact />
       <Footer />
     </div>
   );
