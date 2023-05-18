@@ -25,10 +25,10 @@ export default function Sidebar({colors}) {
         <MdEmail />
           Contact
       </Link>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{color: c3}}>
+      <Link to='resume' smooth={true} duration={1000} className='navlink' style={{color: c3}}>
         <HiDocumentText />
         Resume
-      </a>
+      </Link>
     </div>
   );
 };

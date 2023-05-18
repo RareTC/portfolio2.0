@@ -36,8 +36,8 @@ export default function Contact({colors}) {
 
   return (
     <>
-      <div className='contactForm' id='contact' style={{ backgroundColor: c3 }}>
-        <div className='formcontainer' style={{ backgroundColor: c2 }}>
+      <div className='contactForm' id='contact' style={{ backgroundColor: c2 }}>
+        <div className='formcontainer' style={{ backgroundColor: c3 }}>
           {!emailSent && (
             <>
               <h1 style={{ color: c1 }}>Say Hello!</h1>
@@ -46,12 +46,12 @@ export default function Contact({colors}) {
                 <form ref={form} onSubmit={sendEmail}>
                   <div className='inputform'>
                     <input type="text" name="form_name" placeholder="Name" required
-                      style={{ border: `2px solid ${c1}`, caretColor: c0, color: c0, }} />
+                      style={{ border: `2px solid ${c1}`, caretColor: c0, color: c0, backgroundColor: c4 }} />
                     <input type="email" name="form_email" placeholder='Email' required
-                      style={{ border: `2px solid ${c1}`, caretColor: c0, color: c0, }} />
+                      style={{ border: `2px solid ${c1}`, caretColor: c0, color: c0, backgroundColor: c4 }} />
                   </div>
                   <textarea name="message" placeholder='Enter Message' required
-                    style={{ border: `2px solid ${c1}`, caretColor: c0, color: c0, }} />
+                    style={{ border: `2px solid ${c1}`, caretColor: c0, color: c0, backgroundColor: c4 }} />
                   <button id='contactButton' type="submit"
                     style={{ backgroundColor: c4, color: c1 }}
                     onMouseEnter={(e) => {
@@ -62,7 +62,7 @@ export default function Contact({colors}) {
                       e.target.style.backgroundColor = c4;
                       e.target.style.color = c1;
                     }}>
-                    Send <SendIcon />
+                    Send
                   </button>
                 </form>
               </div>

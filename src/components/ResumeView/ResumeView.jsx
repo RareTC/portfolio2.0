@@ -1,17 +1,25 @@
-import React from 'react';
-import Resume from '../../assets/resume.jpg';
+import React, {useState} from 'react';
 import './ResumeView.css';
-import DownloadIcon from '@mui/icons-material/Download';
+import Resume from '../../assets/resume.jpg';
 import Resumepdf from '../../assets/resume.pdf';
+import { Dialog } from '@mui/material';
 
 
 export default function ResumeView() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  
+
   return (
     <>
-      <div className='resume-container'>
+      <div id="resume" className='resume-container' onClick={openModal}>
         <img className="resume-image" src={Resume} alt='resume' />
         <button className='resume-download' onClick={() => window.open(Resumepdf)}>
-          <DownloadIcon /> Download CV
+          Download CV
         </button>
       </div>
     </>
