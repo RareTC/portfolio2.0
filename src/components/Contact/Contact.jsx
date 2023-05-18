@@ -43,7 +43,16 @@ export default function Contact({colors}) {
                     </div>
                     <textarea name="message" placeholder='Enter Message' required
                      style={{border: `2px solid ${c1}`, caretColor: c0, color: c0,}}/>
-                    <button id='contactButton' type="submit">
+                    <button id='contactButton' type="submit"
+                    style={{backgroundColor: c4, color: c1}}
+                    onMouseEnter={(e) => {
+                      e.target.style.backgroundColor = c1;
+                      e.target.style.color = c4;
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.backgroundColor = c4;
+                      e.target.style.color = c1;
+                    }}>
                       Send <SendIcon />
                     </button>
                 </form>
@@ -51,7 +60,7 @@ export default function Contact({colors}) {
               </>
             )}
             {emailSent && 
-            <div className='formSent'>
+            <div className='formSent' style={{color: c1}}>
               Thank you! Your Message Is On The Way!
             </div>}
           </div>
