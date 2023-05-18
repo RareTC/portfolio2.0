@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import Logo from '../../assets/tclogo.png';
 
 export default function Navbar() {
+  
   const handleColorChange = (event) => {
     const selectedColors = colorValues[event.target.value];
     Object.entries(selectedColors).forEach(([key, value]) => {
@@ -12,7 +13,7 @@ export default function Navbar() {
   };
 
   const colorValues = {
-    neutral: ['#EEE8E3', '#869F9E', '#7C8483', '#A1ADB3', '#77747C'],
+    neutral: ['#DDDBCC', '#5f8d9e', '#495868', '#8f8f8f', '#1C2120'],
     green: ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a'],
     purple: ['#ECE8E6', '#62569e', '#64075C', '#966A7F', '#241829'],
     blue: ['#F8F9F9', '#41B1FC', '#3c92b3','#AEBAB3', '#285f87'],
@@ -34,6 +35,7 @@ export default function Navbar() {
         <div className='theme'>
           Theme
           <select onChange={handleColorChange}>
+            <option value="neutral">Neutral</option>
             <option value="red">Red</option>
             <option value="orange">Orange</option>
             <option value="yellow">Yellow</option>
@@ -49,8 +51,6 @@ export default function Navbar() {
         <Link to="home" smooth={true} duration={1000} className='navlink'> Home </Link>
         <Link to="/projects" className='navlink'> Projects </Link>
         <Link to="about" smooth={true} duration={1000} className='navlink'> About </Link>
-        {/* <Link to="/resume" className='navlink'> Resume </Link>
-        <Link to="contact" smooth={true} duration={1000} className='navlink'> Contact </Link> */}
       </div>
     </div>
   );

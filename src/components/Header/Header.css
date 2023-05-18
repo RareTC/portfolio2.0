@@ -9,9 +9,7 @@
   .rainbowarch {
     display: flex;
     justify-content: flex-start;
-    overflow: hidden; /* Hide the overflowing buttons */
-    transform: translateX(-100%); /* Move the whole container off the screen initially */
-    animation: slideInContainer 1s ease forwards; /* Slide in container animation */
+    animation: slideInContainer 1s ease forwards; 
   }
   
   @keyframes slideInContainer {
@@ -24,71 +22,115 @@
   }
   
   button.rainbow {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border: none;
     border-radius: 50%;
     margin: 5px;
-    animation: slideInButton 1s ease forwards; /* Slide in button animation */
   }
   
-  @keyframes slideInButton {
-    0% {
-      transform: translateX(-100%); /* Start position, off the screen */
-    }
-    100% {
-      transform: translateX(0); /* End position, slide in to the original position */
-    }
-  }
+  
   
   .welcome h3 {
-    position: relative;
-    top: -100px; /* Move the text above the container */
-    opacity: 0; /* Initially invisible */
-    animation: bounce 2s ease 1s forwards; /* Bounce animation */
-    color: var(--color0);
-  }
-  
-  @keyframes bounce {
-    0% {
-      top: -100px; /* Start position above the container */
-      opacity: 0; /* Initially hidden */
+      position: relative;
+      top: -100px; 
+      opacity: 0; 
+      animation: bounce 2s ease 1s forwards; 
+      color: var(--color0);
     }
-    60% {
-      top: 0; /* Move to the container's top */
-      opacity: 1; /* Fade in */
+    
+    @keyframes bounce {
+        0% {
+            top: -100px; 
+            opacity: 0; 
+        }
+        40% {
+            top: 0; 
+            opacity: 1; 
+        }
+        55% {
+            top:-40px
+        }
+        65% {
+            top: 0;
+        }
+        80% {
+            top: -20px; 
+        }
+        100% {
+            top: 0; 
+            opacity: 1;
+        }
     }
-    80% {
-      top: -30px; /* Bounce position */
-      opacity: 1;
+    
+    
+    
+    #red{
+        background-color: red;
+        animation: slideInButton 1s ease forwards; 
+        animation: wobble 2.5s 1s ease;
     }
-    100% {
-      top: 0; /* Return to the container's top */
-      opacity: 1;
+    #orange{
+        background-color: orange;
+        animation: slideInButton 1s ease forwards; 
+        animation: wobble 2.3s 1s ease;
     }
-  }
-  
-  
-
-#red{
-    background-color: red;
-}
-#orange{
-    background-color: orange;
-}
-#yellow{
-    background-color: yellow;
-}
-#green{
-    background-color: green;
-}
-#blue{
-    background-color: blue;
-}
-#purple{
-    background-color: indigo;
-}
-#pink {
-    background-color: #ee82ee;
-}
-
+    #yellow{
+        background-color: yellow;
+        animation: slideInButton 1s ease forwards; 
+        animation: wobble 2.2s 1s ease;
+    }
+    #green{
+        background-color: green;
+        animation: slideInButton 1s ease forwards; 
+        animation: wobble 2s 1s ease;
+    }
+    #blue{
+        background-color: blue;
+        animation: slideInButton 1s ease forwards; 
+        animation: wobble 1.9s 1s  ease;
+    }
+    #purple{
+        background-color: indigo;
+        animation: slideInButton 1s ease forwards; 
+        animation: wobble 1.4s 1s ease;
+    }
+    #pink {
+        background-color: #ee82ee;
+        animation: slideInButton 1s ease forwards; 
+        animation: wobble 1s 1s ease;
+    }
+    
+    @keyframes wobble {
+        0% {
+            transform: translateX(0);
+        }
+        30% {
+            transform: translateX(-5%);
+        }
+        70% {
+            transform: translateX(5%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes slideInButton {
+      0% {
+        transform: translateX(-100%);
+      }
+      80% {
+        transform: translateX(0);
+      }
+      85% {
+        transform: translateX(-5%);
+      }
+      95% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    
