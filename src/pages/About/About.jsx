@@ -1,5 +1,5 @@
 import React from 'react';
-// import './About.css';
+import './About.css';
 import { Link } from 'react-router-dom';
 import AboutMe from '../../assets/aboutme.jpeg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -32,17 +32,6 @@ export default function About() {
           Overall, I'm someone who is passionate about delivering high-quality work and making a positive impact. My unique background, combined with my skills in Software Development,
            make me a well-rounded individual who is dedicated to bringing creativity and innovation to everything I do.   
           </p>
-      <div className='aboutLinks'>
-          <Link to="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer">
-              <LinkedInIcon />
-          </Link>
-          <Link to="https://github.com/RareTC" target='_blank' rel='noopener noreferrer'>
-            <GitHubIcon />
-          </Link>
-          <Link to="/contact">
-            <EmailIcon />
-          </Link>
-      </div>
       </div>
     </div>
     </>
