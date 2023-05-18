@@ -13,9 +13,9 @@ export default function Navbar() {
 
   const colorValues = {
     green: ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a'],
-    purple: ['#EFF1EE', '#8388b2', '#5D468A', '#897085', '#2A1f64'],
-    blue: ['#EFF1EE', '#66819a', '#a2b6c1','#2d3e55', '#263850'],
-    red: ['#EFF1EE', '#cc7e85', '#bc3e52', '#d46161', '#383652']
+    purple: ['#ECE8E6', '#62569e', '#64075C', '#966A7F', '#241829'],
+    blue: ['#F8F9F9', '#41B1FC', '#3c92b3','#AEBAB3', '#285f87'],
+    red: ['#F2F0EC', '#F09393', '#B4223A', '#9F6C66', '#2D212C']
   };
 
   useEffect(() => {
@@ -27,20 +27,23 @@ export default function Navbar() {
   return (
     <div className='navbar'>
       <div className="links">
-        <select onChange={handleColorChange}>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-          <option value="red">Red</option>
-          <option value="purple">Purple</option>
-        </select>
+        <div className='theme'>
+          Theme
+          <select onChange={handleColorChange}>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="purple">Purple</option>
+          </select>
+        </div>
         <Link to='home' smooth={true} duration={1000} className='navlink'>
           <img className='logo' src={Logo} alt="" />
         </Link>
         <Link to="home" smooth={true} duration={1000} className='navlink'> Home </Link>
         <Link to="/projects" className='navlink'> Projects </Link>
         <Link to="about" smooth={true} duration={1000} className='navlink'> About </Link>
-        <Link to="/resume" className='navlink'> Resume </Link>
-        <Link to="contact" smooth={true} duration={1000} className='navlink'> Contact </Link>
+        {/* <Link to="/resume" className='navlink'> Resume </Link>
+        <Link to="contact" smooth={true} duration={1000} className='navlink'> Contact </Link> */}
       </div>
     </div>
   );

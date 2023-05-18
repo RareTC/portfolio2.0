@@ -23,10 +23,6 @@
 }
 
 .contactForm input , textarea {
-  background-color: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
   border: solid 2px;
   margin-left: 5px;
   margin-bottom: 5px;
