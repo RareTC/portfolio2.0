@@ -5,6 +5,9 @@
     top: 0;
     z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: var(--color3);
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .logo {
@@ -15,53 +18,37 @@
     height: 70px;
 }
 
+.logo:hover {
+    cursor: pointer;
+    filter: invert(91%) sepia(50%) saturate(6%) hue-rotate(257deg) brightness(110%) contrast(96%);
+}
+
 .links {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color4);
 }
 
 .navbar a {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
+    margin: 5px;
+    border-right: solid 2px transparent;
+    border-left: solid 2px transparent;
 }
 
-.toggleButton {
-    width: 100%;
-    height: 78px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.navbar a:hover {
+    color: var(--color1);
+    border-left: solid 2px var(--color1);
+    border-right: solid 2px var(--color1);
+    line-height: 60px;
+    transition: all 0.9s ease;
 }
 
-.toggleButton svg {
-    font-size: 50px;
-}
-
-.toggleButton button {
-    margin-right: 15px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-#open {
-    height: 100vh;
-}
-
-#open .links {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 100px;
-}
-
-#open a {
-    width: 100%;
-    text-align: center;
-}
 
 @media only screen and (max-width: 900px) {
     .navbar a {
@@ -72,13 +59,6 @@
     @media only screen and (max-width: 600px) {
     
     
-    .toggleButton {
-        display: flex;
-    }
-    
-    #close a {
-        display: none;
-    }
     
     .logo {
         position: absolute;
@@ -90,23 +70,3 @@
     
     }
     
-    @media only screen and (min-width: 600px) {
-    
-    
-    .toggleButton {
-        display: none;
-    }
-    
-    .hiddenLinks {
-        display: none;
-    }
-    
-    #open {
-        height: 100px;
-    }
-    
-    #open .links {
-        flex-direction: row;
-    }
-    
-    }

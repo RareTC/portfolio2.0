@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import './ResumeView.css';
 import Resume from '../../assets/resume.jpg';
 import Resumepdf from '../../assets/resume.pdf';
-import { Dialog } from '@mui/material';
+import DownloadIcon from '@mui/icons-material/Download';
+
 
 
 export default function ResumeView() {
@@ -19,7 +20,8 @@ export default function ResumeView() {
       <div id="resume" className='resume-container' onClick={openModal}>
         <img className="resume-image" src={Resume} alt='resume' />
         <button className='resume-download' onClick={() => window.open(Resumepdf)}>
-          Download CV
+          <DownloadIcon />
+          Download CV 
         </button>
       </div>
     </>

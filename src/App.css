@@ -1,5 +1,14 @@
+:root {
+  --color1: #EFF1EE;
+  --color2: #58DA72;
+  --color3: #179c78;
+  --color4: #688482;
+  --color5: #1a222a;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--color4);
 }
