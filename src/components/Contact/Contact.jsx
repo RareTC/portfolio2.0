@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 import SendIcon from '@mui/icons-material/Send';
+import Resume from '../ResumeView/ResumeView';
 
 
 export default function Contact({colors}) {
@@ -72,6 +73,7 @@ export default function Contact({colors}) {
               Thank you! Your Message Is On The Way!
             </div>}
         </div>
+        <Resume />
       </div>
 
     </>

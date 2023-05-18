@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './components/Contact/Contact';
 import Sidebar from './components/Sidebar/Sidebar';
+import Resume from './components/ResumeView/ResumeView';
 
 const defaultColor = ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a']
 

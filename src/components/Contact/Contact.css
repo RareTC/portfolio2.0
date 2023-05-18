@@ -1,8 +1,8 @@
 .contactForm {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:start;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: transparent;
   padding: 20px;
   width: 100%;
