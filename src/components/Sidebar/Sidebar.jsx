@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { HiDocumentText } from 'react-icons/hi';
-import Contact from '../Contact/Contact';
 import './Sidebar.css';
 
 export default function Sidebar({colors}) {
@@ -19,7 +19,12 @@ export default function Sidebar({colors}) {
         <FaLinkedin />
         LinkedIn
       </a>
-      <Contact />
+      <a href="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer" style={{color: c3}}>
+      </a>
+      <Link to="contact" smooth={true} duration={1000} className='navlink' style={{color: c3}}>
+        <MdEmail />
+          Contact
+      </Link>
       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{color: c3}}>
         <HiDocumentText />
         Resume

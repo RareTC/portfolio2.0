@@ -15,9 +15,9 @@ export default function Navbar({ onColorChange, colors }) {
   
   const colorValues = {
     green: ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a'],
-    purple: ['#EBE2EA', '#8388b2', '#5D468A', '#897085', '#2A1f64'],
-    blue: ['#f5f7f6', '#66819a', '#a2b6c1','#2d3e55', '#263850'],
-    red: ['#f4f7f2', '#cc7e85', '#bc3e52', '#d46161', '#383652']
+    purple: ['#EFF1EE', '#8388b2', '#5D468A', '#897085', '#2A1f64'],
+    blue: ['#EFF1EE', '#66819a', '#a2b6c1','#2d3e55', '#263850'],
+    red: ['#EFF1EE', '#cc7e85', '#bc3e52', '#d46161', '#383652']
   };
 
   return (
