@@ -1,0 +1,94 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  
+  .rainbowarch {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden; /* Hide the overflowing buttons */
+    transform: translateX(-100%); /* Move the whole container off the screen initially */
+    animation: slideInContainer 1s ease forwards; /* Slide in container animation */
+  }
+  
+  @keyframes slideInContainer {
+    0% {
+      transform: translateX(-100%); /* Start position, off the screen */
+    }
+    100% {
+      transform: translateX(0); /* End position, slide in to the original position */
+    }
+  }
+  
+  button.rainbow {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    animation: slideInButton 1s ease forwards; /* Slide in button animation */
+  }
+  
+  @keyframes slideInButton {
+    0% {
+      transform: translateX(-100%); /* Start position, off the screen */
+    }
+    100% {
+      transform: translateX(0); /* End position, slide in to the original position */
+    }
+  }
+  
+  .welcome h3 {
+    position: relative;
+    top: -100px; /* Move the text above the container */
+    opacity: 0; /* Initially invisible */
+    animation: bounce 2s ease 1s forwards; /* Bounce animation */
+    color: var(--color0);
+  }
+  
+  @keyframes bounce {
+    0% {
+      top: -100px; /* Start position above the container */
+      opacity: 0; /* Initially hidden */
+    }
+    60% {
+      top: 0; /* Move to the container's top */
+      opacity: 1; /* Fade in */
+    }
+    80% {
+      top: -30px; /* Bounce position */
+      opacity: 1;
+    }
+    100% {
+      top: 0; /* Return to the container's top */
+      opacity: 1;
+    }
+  }
+  
+  
+
+#red{
+    background-color: red;
+}
+#orange{
+    background-color: orange;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#purple{
+    background-color: indigo;
+}
+#pink {
+    background-color: #ee82ee;
+}
+

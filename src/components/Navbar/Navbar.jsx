@@ -12,15 +12,19 @@ export default function Navbar() {
   };
 
   const colorValues = {
+    neutral: ['#EEE8E3', '#869F9E', '#7C8483', '#A1ADB3', '#77747C'],
     green: ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a'],
     purple: ['#ECE8E6', '#62569e', '#64075C', '#966A7F', '#241829'],
     blue: ['#F8F9F9', '#41B1FC', '#3c92b3','#AEBAB3', '#285f87'],
-    red: ['#F2F0EC', '#F09393', '#B4223A', '#9F6C66', '#2D212C']
+    red: ['#F2F0EC', '#F09393', '#B4223A', '#9F6C66', '#2D212C'],
+    orange: ['#F2F2EF', '#e98522', '#ce5615', '#ca6f4d', '#222128'],
+    yellow: ['#EFF4EF', '#F2F747', '#DFCD2E', '#BEA944', '#3E6669'],
+    pink: ['#F8F5F7', '#ee60a1', '#be2177', '#A296B3', '#843574'],
   };
 
   useEffect(() => {
     // Set the initial color values based on the default selected option
-    const defaultOption = 'green';
+    const defaultOption = 'neutral';
     handleColorChange({ target: { value: defaultOption } });
   }, []);
 
@@ -30,10 +34,13 @@ export default function Navbar() {
         <div className='theme'>
           Theme
           <select onChange={handleColorChange}>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
             <option value="green">Green</option>
             <option value="blue">Blue</option>
-            <option value="red">Red</option>
             <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
           </select>
         </div>
         <Link to='home' smooth={true} duration={1000} className='navlink'>

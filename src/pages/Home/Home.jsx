@@ -8,18 +8,6 @@ export default function Home() {
 
   return (
       <div className='home' id='home'>
-        {/* <div className='welcome'>
-            <h3>Pick Your Favorite Color For A Surprise</h3>
-            <div className='rainbowarch'>
-                <button className='rainbow' id='red'></button>
-                <button className='rainbow' id='orange'></button>
-                <button className='rainbow' id='yellow'></button>
-                <button className='rainbow' id='green'></button>
-                <button className='rainbow' id='blue'></button>
-                <button className='rainbow' id='indigo'></button>
-                <button className='rainbow' id='violet'></button>
-            </div>
-        </div> */}
           <div className='bioContainer' >
               <div className='profilePhoto'>
                   <img src={Profile} alt='profile' />
