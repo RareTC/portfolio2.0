@@ -45,18 +45,17 @@
     padding-left: 10px;
     padding-right: 10px;
     margin: 5px;
-    border-right: solid 2px transparent;
-    border-left: solid 2px transparent;
-}
+    border-bottom: solid 2px transparent;
+} 
 
 .navbar a:hover {
     color: var(--color1);
-    border-left: solid 2px var(--color1);
-    border-right: solid 2px var(--color1);
+    border-bottom: solid 2px var(--color1);
     line-height: 60px;
     transition: all 0.9s ease;
     cursor: pointer;
 }
+
 
 @media only screen and (max-width: 870px) {
     .navbar a {
@@ -79,7 +78,7 @@
     }
 }
     
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
 
     .links {
         flex-direction: row;
@@ -95,7 +94,7 @@
     }
 
     .navbar a {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .theme {

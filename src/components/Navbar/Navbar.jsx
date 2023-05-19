@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import { Link } from 'react-scroll';
+import { Link} from 'react-scroll';
 import Select from 'react-select';
 import Logo from '../../assets/tclogo.png';
 
@@ -19,6 +19,8 @@ export default function Navbar({ selectedColor, onColorChange }) {
     { value: 'pink', label: 'pink'},
   ]
 
+  // const section1 = useScrollSection('section1');
+  // const section2 = useScrollSection('section2');
 
   const customStyles = {
     option: (provided, state) => ({
@@ -91,6 +93,7 @@ export default function Navbar({ selectedColor, onColorChange }) {
         <Link to="home" offset={-58} smooth={true} duration={1000} className='navlink'> Home </Link>
         <Link to="projectList" offset={-70} smooth={true} duration={1000} className='navlink'> Projects </Link>
         <Link to="about" offset={-60} smooth={true} duration={1000} className='navlink'> About </Link>
+        <Link to="contact" offset={-65} smooth={true} duration={1000} className='navlink'> Contact </Link>
       </div>
     </div>
   );

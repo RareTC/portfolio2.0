@@ -24,7 +24,7 @@ export default function Sidebar() {
         <MdEmail />
           Contact
       </Link>
-      <Link to='resume' offset={-84} smooth={true} duration={1000} className='navlink'>
+      <Link to='contact' offset={-65} smooth={true} duration={1000} className='navlink'>
         <HiDocumentText />
         Resume
       </Link>
