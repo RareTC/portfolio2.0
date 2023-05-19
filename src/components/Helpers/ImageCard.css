@@ -102,4 +102,8 @@
   .projectItem {
     flex-basis: 50%;
   }
+  .project-btn-wrap {
+    gap: 20px;
+
+  }
 }

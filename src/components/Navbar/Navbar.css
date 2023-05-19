@@ -102,4 +102,30 @@
     }
 
 }
+@media only screen and (max-width: 400px) {
+
+    .links {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+
+    .logo {
+        left: 15px;
+        top: 20px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .theme {
+        font-size: 10px;
+    }
+
+}
+
     
