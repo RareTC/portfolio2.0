@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Header.css';
+import TypeWriter from "typewriter-effect";
+import Wave from '../../assets/wave.PNG';
+import Laptop from '../../assets/laptop.PNG';
 
-export default function Header({ selectedColor, onColorChange }) {
+
+export default function Header({ selectedColor, onColorChange, currentImage }) {
 
   return (
     <div className='welcome'>
@@ -15,6 +19,21 @@ export default function Header({ selectedColor, onColorChange }) {
         <button className={`${selectedColor === 'purple' ? 'pulse' : '' }`} id='purple' value="purple" onClick={() => onColorChange('purple')}></button>
         <button className={`${selectedColor === 'pink' ? 'pulse' : '' }`} id='pink' value="pink" onClick={() => onColorChange('pink')}></button>
       </div>
+      <p className="typewriter" >
+        <TypeWriter
+          className="typewriter"
+          options={{
+            strings: ['Coachable', 'Organized', 'Creative'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </p>
+      <img
+        src={currentImage === 'Laptop' ? Laptop : Wave}
+        alt="memoji"
+        className="memoji"
+      />
     </div>
   )
 }

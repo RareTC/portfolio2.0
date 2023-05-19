@@ -11,7 +11,9 @@ import Header from './components/Header/Header';
 
 export default function App() {
 
-  const[selectedColor, setSelectedColor] = useState('');
+  const[selectedColor, setSelectedColor] = useState('grey');
+  const [currentImage, setCurrentImage] = useState('Laptop');
+
 
   const handleColorChange = (color) => {
     setSelectedColor(color);
@@ -20,6 +22,7 @@ export default function App() {
     Object.entries(selectedColors).forEach(([key, value]) => {
       document.documentElement.style.setProperty(`--color${key}`, value);
     });
+    setCurrentImage('Wave');
   };
   
   const colorValues = {
@@ -37,7 +40,7 @@ export default function App() {
     <div className="App" >
       <Navbar selectedColor={selectedColor} onColorChange={handleColorChange}/>
       <Sidebar />
-      <Header selectedColor={selectedColor} onColorChange={handleColorChange}/>
+      <Header selectedColor={selectedColor} onColorChange={handleColorChange} currentImage={currentImage}/>
       <Home />
       <About />
       <Contact />

@@ -29,12 +29,6 @@
     border: solid 3px;
 }
 
-.typewriter {
-    font-size: 22px !important;
-    color: var(--color1);
-    font-weight: 400;
-}
-
 .about {
     align-self: flex-start;
     width: 60%;
