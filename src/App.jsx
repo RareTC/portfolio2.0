@@ -23,7 +23,7 @@ export default function App() {
   };
   
   const colorValues = {
-    neutral: ['#DDDBCC', '#5f8d9e', '#495868', '#8f8f8f', '#1C2120'],
+    grey: ['#DDDBCC', '#5f8d9e', '#495868', '#8f8f8f', '#1C2120'],
     green: ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a'],
     purple: ['#ECE8E6', '#62569e', '#64075C', '#966A7F', '#241829'],
     blue: ['#F8F9F9', '#41B1FC', '#3c92b3','#AEBAB3', '#285f87'],
