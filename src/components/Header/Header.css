@@ -11,6 +11,14 @@
     justify-content: flex-start;
     animation: slideInContainer 1s ease forwards; 
   }
+
+  .rainbowarch button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+  }
   
   @keyframes slideInContainer {
     0% {
@@ -20,23 +28,16 @@
       transform: translateX(0); /* End position, slide in to the original position */
     }
   }
-  
-  button.rainbow {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    margin: 5px;
-  }
-  
-  
-  
+
   .welcome h3 {
       position: relative;
       top: -100px; 
       opacity: 0; 
       animation: bounce 2s ease 1s forwards; 
-      color: var(--color0);
+    }
+
+    #h3 {
+        color: var(--color1);
     }
     
     @keyframes bounce {
@@ -68,38 +69,40 @@
     #red{
         background-color: red;
         animation: slideInButton 1s ease forwards; 
-        animation: wobble 2.5s 1s ease;
+        animation: wobble 2.5s 1s ease forwards;
     }
     #orange{
         background-color: orange;
         animation: slideInButton 1s ease forwards; 
-        animation: wobble 2.3s 1s ease;
+        animation: wobble 2.3s 1s ease forwards;
     }
     #yellow{
         background-color: yellow;
         animation: slideInButton 1s ease forwards; 
-        animation: wobble 2.2s 1s ease;
+        animation: wobble 2.2s 1s ease forwards;
     }
     #green{
         background-color: green;
         animation: slideInButton 1s ease forwards; 
-        animation: wobble 2s 1s ease;
+        animation: wobble 2s 1s ease forwards;
     }
     #blue{
         background-color: blue;
         animation: slideInButton 1s ease forwards; 
-        animation: wobble 1.9s 1s  ease;
+        animation: wobble 1.9s 1s  ease forwards;
     }
     #purple{
         background-color: indigo;
         animation: slideInButton 1s ease forwards; 
-        animation: wobble 1.4s 1s ease;
+        animation: wobble 1.4s 1s ease forwards;
     }
     #pink {
         background-color: #ee82ee;
         animation: slideInButton 1s ease forwards; 
-        animation: wobble 1s 1s ease;
+        animation: wobble 1s 1s ease forwards;
     }
+
+    
     
     @keyframes wobble {
         0% {
@@ -133,4 +136,25 @@
         transform: translateX(0);
       }
     }
+
     
+    .pulse {
+        animation: pulse-animation 2s infinite !important;
+    }
+    
+        @keyframes pulse-animation {
+            0% {
+                transform: scale(.95);
+                box-shadow: 0 0 0 0 var(--color2);
+              }
+              40% {
+                  transform: scale(1);
+                  box-shadow: 0 0 0 12px var(--color2);
+              }
+                
+              100% {
+                  transform: scale(.95);
+                  box-shadow: 0 0 0 0 var(--color2);
+              }
+          }
+      
