@@ -1,3 +1,7 @@
+<div id="header" align="center">
+   <a href="https://imgur.com/9L1xy1z"><img src="https://i.imgur.com/9L1xy1z.png" title="source: imgur.com" /></a>
+</div>
+
 # Trevor's Portfolio 👨🏼‍💻
 
 <a href="https://trev-portfolio.netlify.app/" target="_blank">View Here</a>
