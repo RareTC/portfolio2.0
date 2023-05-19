@@ -67,6 +67,7 @@
 .group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
@@ -127,15 +128,19 @@
         justify-content: center;
     }
 
+    .profilePhoto {
+        padding-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+
     .profilePhoto img {
         width: 150px;
         height: 150px;
-        position: absolute;
-        left: 30%;
     }
     
     .about {
-        padding-top: 23px;
+        padding-top: 0px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 15px;
@@ -156,6 +161,5 @@
         height: auto;
         text-align: center;
     }
-    
     
 }
