@@ -35,6 +35,51 @@ export default function Navbar({ selectedColor, onColorChange }) {
     }),
   };
 
+  const mobileStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.data.value,
+    }),
+    control: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.selectProps.value,
+      width: '100px',
+      fontSize: '12px',
+    }),
+    menu: (styles) => ({
+      ...styles,
+      color: '#2d3e45',
+      fontSize: '12px',
+    }),
+  };
+
+  const smallStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.data.value,
+    }),
+    control: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.selectProps.value,
+      width: '70px',
+      fontSize: '10px',
+    }),
+    menu: (styles) => ({
+      ...styles,
+      color: '#2d3e45',
+      fontSize: '10px',
+    }),
+  };
+
+  //use the below function to adjust select react component for mobile
+  if (window.innerWidth <= 870) {
+    Object.assign(customStyles, mobileStyles);
+  }
+
+  if (window.innerWidth <= 500) {
+    Object.assign(customStyles, smallStyles);
+  }
+
   return (
     <div className='navbar'>
       <div className="links">
