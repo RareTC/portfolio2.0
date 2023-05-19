@@ -27,4 +27,6 @@
     color: var(--color0);
   }
   
-  
+  .navlink {
+    cursor: pointer;
+  }

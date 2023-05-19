@@ -1,0 +1,75 @@
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding:40px 20px;
+  background-color: var(--color2);
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color3);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.image {
+  height: 50%;
+  width: 75%;
+  border-radius: 8px;
+}
+
+.project-title {
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: 1000;
+  color: var(--color4);
+}
+
+.project-desc {
+  text-align: center;
+  margin: 0;
+  padding:2% 8%;
+  color: var(--color4);
+  font-weight: 800;
+}
+
+.project-skills {
+  color: var(--color4);
+  padding: 2%;
+  margin: 0;
+}
+
+.project-btn-wrap {
+  display: flex;
+  gap: 50px;
+}
+
+.project-btn {
+  width: 120px;
+  padding: 10px;
+  background-color: var(--color1);
+  border: none;
+  color: var(--color4);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-btn:hover {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+.project-btn:active {
+  transform: translatey(2px);
+}

@@ -7,12 +7,12 @@ import About from './pages/About/About';
 import Contact from './components/Contact/Contact';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
+import Projects from './pages/Projects/Projects';
 
 
 export default function App() {
 
   const[selectedColor, setSelectedColor] = useState('grey');
-  const [currentImage, setCurrentImage] = useState('Laptop');
 
 
   const handleColorChange = (color) => {
@@ -22,7 +22,6 @@ export default function App() {
     Object.entries(selectedColors).forEach(([key, value]) => {
       document.documentElement.style.setProperty(`--color${key}`, value);
     });
-    setCurrentImage('Wave');
   };
   
   const colorValues = {
@@ -40,8 +39,9 @@ export default function App() {
     <div className="App" >
       <Navbar selectedColor={selectedColor} onColorChange={handleColorChange}/>
       <Sidebar />
-      <Header selectedColor={selectedColor} onColorChange={handleColorChange} currentImage={currentImage}/>
+      <Header selectedColor={selectedColor} onColorChange={handleColorChange}/>
       <Home />
+      <Projects />
       <About />
       <Contact />
       <Footer />

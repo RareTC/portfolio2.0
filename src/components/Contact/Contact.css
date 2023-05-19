@@ -67,7 +67,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px;
+  border: none;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100px;
@@ -84,7 +84,8 @@ textarea {
 }
 
 #contactButton:hover {
-  border: solid 2px;
+  cursor: pointer;
+  border: none;
   color: var(--color1);
   background-color: var(--color4);
 }

@@ -1,11 +1,28 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Header.css';
 import TypeWriter from "typewriter-effect";
 import Wave from '../../assets/wave.PNG';
-import Laptop from '../../assets/laptop.PNG';
+import Chefkiss from '../../assets/chefkiss.PNG';
+import Chin from '../../assets/chin.PNG';
+import Greet from '../../assets/greet.PNG';
+import Heart from '../../assets/heart.PNG';
+import Snap from '../../assets/snap.PNG';
+import Surf from '../../assets/surf.PNG';
+import Laptop from '../../assets/laptop.PNG'
 
 
-export default function Header({ selectedColor, onColorChange, currentImage }) {
+export default function Header({ selectedColor, onColorChange }) {
+  
+  const colorToImageMap = {
+    grey: Laptop,
+    green: Wave,
+    purple: Chefkiss,
+    blue: Chin,
+    red: Greet,
+    orange: Snap,
+    yellow: Surf,
+    pink: Heart,
+  };
 
   return (
     <div className='welcome'>
@@ -30,7 +47,7 @@ export default function Header({ selectedColor, onColorChange, currentImage }) {
         />
       </p>
       <img
-        src={currentImage === 'Laptop' ? Laptop : Wave}
+        src={colorToImageMap[selectedColor]}
         alt="memoji"
         className="memoji"
       />

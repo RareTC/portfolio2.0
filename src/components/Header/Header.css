@@ -12,12 +12,14 @@
     bottom: 42%;
     height: 30%;
     opacity: 1;
+    z-index: 0;
 }
 
 .rainbowarch {
     display: flex;
     justify-content: flex-start;
     animation: slideInContainer 1s ease forwards; 
+    z-index: 1;
 }
 
 .rainbowarch button{
