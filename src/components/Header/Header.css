@@ -32,10 +32,10 @@
   
   @keyframes slideInContainer {
     0% {
-      transform: translateX(-100%); /* Start position, off the screen */
+      transform: translateX(-100%); 
     }
     100% {
-      transform: translateX(0); /* End position, slide in to the original position */
+      transform: translateX(0); 
     }
   }
 
@@ -50,29 +50,32 @@
     color: var(--color1);
 }
 
-    @keyframes bounce {
-        0% {
-            top: -100px; 
-            opacity: 0; 
-        }
-        40% {
-            top: 0; 
-            opacity: 1; 
-        }
-        55% {
-            top:-40px
-        }
-        65% {
-            top: 0;
-        }
-        80% {
-            top: -20px; 
-        }
-        100% {
-            top: 0; 
-            opacity: 1;
-        }
+@keyframes bounce {
+    0% {
+        top: -100px;
+        opacity: 0;
     }
+    25% {
+        top: 0;
+        opacity: 1;
+    }
+    40% {
+        top: -30px;
+    }
+    50% {
+        top: 0;
+    }
+    60% {
+        top: -15px;
+    }
+    75% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
 
 
 
@@ -119,10 +122,10 @@
             transform: translateX(0);
         }
         30% {
-            transform: translateX(-5%);
+            transform: translateX(-8%);
         }
         70% {
-            transform: translateX(5%);
+            transform: translateX(6%);
         }
         100% {
             transform: translateX(0);

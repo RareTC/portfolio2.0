@@ -21,8 +21,8 @@
 .profilePhoto img {
     position: absolute;
     left: 0;
-    width: 90%;
-    height: 80%;
+    width: 350px;
+    height: 300px;
     object-fit: cover;
     border-radius: 25px;
     overflow: hidden;
@@ -69,6 +69,7 @@
 .group {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .icon-text {
