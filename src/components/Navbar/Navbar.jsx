@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import Select from 'react-select';
 import Logo from '../../assets/tclogo.png';
 
 export default function Navbar({ selectedColor, onColorChange }) {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const options = [
     { value: 'grey', label: 'Neutral'},
@@ -17,68 +19,58 @@ export default function Navbar({ selectedColor, onColorChange }) {
     { value: 'pink', label: 'pink'},
   ]
 
+
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
       backgroundColor: state.data.value,
+      fontSize: getFontSize(), 
     }),
     control: (provided, state) => ({
       ...provided,
       backgroundColor: state.selectProps.value,
-      width: '180px',
-      fontSize: '18px',
+      width: getWidth(), 
+      fontSize: getFontSize(), 
     }),
     menu: (styles) => ({
       ...styles,
       color: '#2d3e45',
-      fontSize: '18px',
+      fontSize: getFontSize(), 
     }),
   };
+  
+  // Function to handle window resize event
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-  const mobileStyles = {
-    option: (provided, state) => ({
-      ...provided,
-      backgroundColor: state.data.value,
-    }),
-    control: (provided, state) => ({
-      ...provided,
-      backgroundColor: state.selectProps.value,
-      width: '100px',
-      fontSize: '12px',
-    }),
-    menu: (styles) => ({
-      ...styles,
-      color: '#2d3e45',
-      fontSize: '12px',
-    }),
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const getFontSize = () => {
+    if (windowWidth <= 500) {
+      return '10px';
+    } else if (windowWidth <= 870) {
+      return '12px';
+    } else {
+      return '18px';
+    }
   };
 
-  const smallStyles = {
-    option: (provided, state) => ({
-      ...provided,
-      backgroundColor: state.data.value,
-    }),
-    control: (provided, state) => ({
-      ...provided,
-      backgroundColor: state.selectProps.value,
-      width: '70px',
-      fontSize: '10px',
-    }),
-    menu: (styles) => ({
-      ...styles,
-      color: '#2d3e45',
-      fontSize: '10px',
-    }),
+  const getWidth = () => {
+    if (windowWidth <= 500) {
+      return '70px';
+    } else if (windowWidth <= 870) {
+      return '100px';
+    } else {
+      return '180px';
+    }
   };
-
-  //use the below function to adjust select react component for mobile
-  if (window.innerWidth <= 870) {
-    Object.assign(customStyles, mobileStyles);
-  }
-
-  if (window.innerWidth <= 500) {
-    Object.assign(customStyles, smallStyles);
-  }
 
   return (
     <div className='navbar'>

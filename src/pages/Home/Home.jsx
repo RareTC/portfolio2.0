@@ -14,8 +14,7 @@ export default function Home() {
               <div className='about'>
                   <h2 >Trevor Campbell</h2>
                   <div className='prompt'>
-                      <p >I bring creative and palatable projects to life with surgical precision and organized code. As a full stack developer experienced in
-                        several languages, I combine my passion for technology with my healthcare background to create seamless impactful solutions. 
+                      <p >I bring creative and palatable projects to life with surgical precision and organized code. I combine my passion for technology with my healthcare background to create seamless impactful solutions. 
                       </p>
                   </div>
               </div>

@@ -30,3 +30,14 @@
   .navlink {
     cursor: pointer;
   }
+
+  @media (max-width: 475px) {
+    .sidebar {
+      top: 50%; 
+      transform: translate(0, -78%);
+    }
+  
+    .sidebar a {
+      font-size: 12px; 
+    }
+  }

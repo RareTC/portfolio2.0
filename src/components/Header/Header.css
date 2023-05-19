@@ -241,7 +241,12 @@
     
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 375px) {
+
+    .welcome {
+        padding-top: 30px;
+    }
+
     .rainbowarch button{
         width: 18px;
         height: 18px;
