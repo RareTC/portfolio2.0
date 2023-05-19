@@ -141,17 +141,41 @@ textarea {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1025px) {
   .contactForm {
-      width: 90%;
-      height: 100%;
-    }
+    flex-direction: column;
+  }
+
+  .formcontainer {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width:550px) {
+
+  .contactForm {
+    width: 100% !important;
+  }
+
+  .contactForm h1 {
+    font-size: 20px;
+  }
+
+  .contactForm h3 {
+    font-size: 18px;
+  }
+
+  .inputform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  textarea {
+    height: 150px;
+    width: 250px ;
+    resize: none;
+  }
   
-    .contactForm input, textarea {
-      width: 100%;
-    }
-  
-    #contactButton {
-      margin-top: 20px;
-    }
 }
