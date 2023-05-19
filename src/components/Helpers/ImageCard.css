@@ -18,7 +18,7 @@
   background-color: var(--color3);
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  padding-top: 0;
+  padding-top: 8px;
   margin-top: 0;
   max-width: max-content;
 }
@@ -39,21 +39,27 @@
 
 .project-desc {
   text-align: center;
-  margin: 0;
-  padding:2% 8%;
+  margin-top: 14px;
+  padding-left:20px;
+  padding-right:20px;
   color: var(--color4);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .project-skills {
   color: var(--color4);
-  padding: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:20px;
+  padding-right:20px;
   margin: 0;
+  text-align: center;
 }
 
 .project-btn-wrap {
   display: flex;
   gap: 50px;
+  padding-bottom: 10px;
 }
 
 .project-btn {
@@ -79,8 +85,21 @@
   transform: translatey(2px);
 }
 
-/* @media only screen and(max-width: 950px) {
+@media only screen and (min-width:1650px) {
   .projectList {
-
+    flex-wrap:nowrap;
   }
-} */
+  .projectItem {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .projectList {
+    gap: 20px;
+    padding:20px 0;
+  }
+  .projectItem {
+    flex-basis: 50%;
+  }
+}

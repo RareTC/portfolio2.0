@@ -30,3 +30,42 @@
     color: var(--color0);
     text-shadow: 2px 2px 4px var(--color3);
 }
+
+@media only screen and (max-width: 1000px) {
+    .aboutContainer {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-right: 30px;
+    }
+
+    
+    .aboutPhoto img {
+        margin: 0;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .aboutSection h2 {
+        font-size: 24px;
+    }
+
+    .aboutSection {
+        font-size: 16px;
+    }
+
+    .aboutContainer {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-right: 30px;
+    }
+
+    .aboutPhoto img {
+        margin: 0;
+        height: 150px;
+    }
+}
