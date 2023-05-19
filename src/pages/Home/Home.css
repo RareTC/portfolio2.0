@@ -85,3 +85,53 @@
     height: 30px;
     width: 50px;
 }
+
+@media only screen and (max-width: 1200px) {
+    /* .bioContainer {
+      flex-direction: column;
+      align-items: center;
+    } */
+  
+    /* .profilePhoto {
+      width: 20%;
+      padding-bottom: 50%;
+      left: 2%;
+      order: 1;
+    } */
+
+    .profilePhoto img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+    }
+
+    .about h2 {
+      font-size: 20px;
+      height: auto;
+    }
+/* 
+    .about {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        order: 4;
+      }
+  
+    .about .prompt {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 14px;
+    }
+
+
+    .skills {
+        margin-bottom: 10px;
+    }
+
+    .list {
+        padding-left: 6px;
+        padding-right: 6px;
+    } */
+
+}

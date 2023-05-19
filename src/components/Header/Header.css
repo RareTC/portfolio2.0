@@ -10,9 +10,10 @@
     position: absolute;
     right: 10%;
     bottom: 42%;
-    height: 30%;
     opacity: 1;
     z-index: 0;
+    width: 300px;
+    height: 300px;
 }
 
 .rainbowarch {
@@ -163,7 +164,7 @@
 
     40% {
         transform: scale(1);
-        box-shadow: 0 0 0 12px var(--color2);
+        box-shadow: 0 0 0 9px var(--color2);
     }
 
     100% {
@@ -178,4 +179,88 @@
     font-weight: 800;
     position: relative;
     bottom: -20%;
+}
+
+@media only screen and (max-width: 1150px) {
+    .memoji {
+        right: 20px
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .memoji {
+        right: 10px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .welcome {
+        height: 40vh;
+    }
+    .memoji {
+        right: 10px;
+        width: 170px;
+        height: 170px;
+        bottom: 60%;
+    }
+    .rainbowarch button{
+        width: 28px;
+        height: 28px;
+        border: none;
+        border-radius: 50%;
+        margin: 8px;
+    }
+    .welcome h3 {
+        font-size: 16px;
+    }
+
+    .typewriter{
+        font-size: 18px !important;
+        position: relative;
+        bottom: -10%;
+    }
+
+    @keyframes pulse-animation {
+        0% {
+            transform: scale(.95);
+            box-shadow: 0 0 0 0 var(--color2);
+        }
+    
+        40% {
+            transform: scale(1);
+            box-shadow: 0 0 0 6px var(--color2);
+        }
+    
+        100% {
+            transform: scale(.95);
+            box-shadow: 0 0 0 0 var(--color2);
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 340px) {
+    .rainbowarch button{
+        width: 18px;
+        height: 18px;
+        border: none;
+        border-radius: 50%;
+        margin: 4px;
+    }
+    .welcome h3 {
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .memoji {
+        right: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .typewriter{
+        font-size: 15px !important;
+        position: inherit;
+    }
 }
