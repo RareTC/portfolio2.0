@@ -48,12 +48,12 @@ export default function Navbar({ selectedColor, onColorChange }) {
           styles={customStyles}
           />
         </div>
-        <Link to='home' smooth={true} duration={1000} className='navlink'>
+        <Link to='welcome' smooth={true} duration={1000} className='navlink'>
           <img className='logo' src={Logo} alt="" />
         </Link>
-        <Link to="home" smooth={true} duration={1000} className='navlink'> Home </Link>
-        <Link to="/projects" className='navlink'> Projects </Link>
-        <Link to="about" smooth={true} duration={1000} className='navlink'> About </Link>
+        <Link to="home" offset={-58} smooth={true} duration={1000} className='navlink'> Home </Link>
+        <Link to="projectList" offset={-70} smooth={true} duration={1000} className='navlink'> Projects </Link>
+        <Link to="about" offset={-60} smooth={true} duration={1000} className='navlink'> About </Link>
       </div>
     </div>
   );

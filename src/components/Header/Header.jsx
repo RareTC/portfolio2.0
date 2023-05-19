@@ -9,6 +9,7 @@ import Heart from '../../assets/heart.PNG';
 import Snap from '../../assets/snap.PNG';
 import Surf from '../../assets/surf.PNG';
 import Laptop from '../../assets/laptop.PNG'
+import {TbArrowBearRight} from 'react-icons/tb';
 
 
 export default function Header({ selectedColor, onColorChange }) {

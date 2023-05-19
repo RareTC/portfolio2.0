@@ -20,11 +20,11 @@ export default function Sidebar() {
       </a>
       <a href="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer">
       </a>
-      <Link to="contact" smooth={true} duration={1000} className='navlink'>
+      <Link to="contact" offset={-65} smooth={true} duration={1000} className='navlink'>
         <MdEmail />
           Contact
       </Link>
-      <Link to='resume' smooth={true} duration={1000} className='navlink'>
+      <Link to='resume' offset={-84} smooth={true} duration={1000} className='navlink'>
         <HiDocumentText />
         Resume
       </Link>
