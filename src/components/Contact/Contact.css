@@ -143,7 +143,7 @@ textarea {
 
 @media screen and (max-width: 1025px) {
   .contactForm {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .formcontainer {

@@ -6,14 +6,19 @@
     height: 58vh;
 }
 
+.memojicontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .memoji {
     position: absolute;
     right: 10%;
-    bottom: 42%;
     opacity: 1;
     z-index: 0;
-    width: 300px;
-    height: 300px;
+    width: 210px;
+    height: 210px;
 }
 
 .rainbowarch {
@@ -24,8 +29,8 @@
 }
 
 .rainbowarch button{
-    width: 50px;
-    height: 50px;
+    width: 43px;
+    height: 43px;
     border: none;
     border-radius: 50%;
     margin: 8px;
@@ -200,9 +205,8 @@
     }
     .memoji {
         right: 10px;
-        width: 170px;
-        height: 170px;
-        bottom: 60%;
+        width: 130px;
+        height: 130px;
     }
     .rainbowarch button{
         width: 28px;
@@ -262,7 +266,6 @@
         right: 10px;
         width: 100px;
         height: 100px;
-        bottom: 53%;
     }
     .typewriter{
         font-size: 15px !important;

@@ -36,8 +36,8 @@ export default function Contact() {
 
   return (
     <>
-      <div className='contactForm' id='contact'>
-        <div className='formcontainer'>
+      <div className='contactForm'>
+        <div className='formcontainer' id='contact'>
           {!emailSent && (
             <>
               <h1>Say Hello!</h1>

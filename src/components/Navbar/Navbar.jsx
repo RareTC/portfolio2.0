@@ -93,7 +93,7 @@ export default function Navbar({ selectedColor, onColorChange }) {
         <Link to="home" offset={-58} smooth={true} duration={1000} className='navlink'> Home </Link>
         <Link to="projectList" offset={-70} smooth={true} duration={1000} className='navlink'> Projects </Link>
         <Link to="about" offset={-60} smooth={true} duration={1000} className='navlink'> About </Link>
-        <Link to="contact" offset={-65} smooth={true} duration={1000} className='navlink'> Contact </Link>
+        <Link to="contact" offset={-190} smooth={true} duration={1000} className='navlink'> Contact </Link>
       </div>
     </div>
   );

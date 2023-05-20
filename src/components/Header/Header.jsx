@@ -26,6 +26,7 @@ export default function Header({ selectedColor, onColorChange }) {
   };
 
   return (
+    <>
     <div className='welcome'>
       <h3 id='h3'>Pick Your Favorite Color To Add Some Life</h3>
       <div className='rainbowarch'>
@@ -45,13 +46,17 @@ export default function Header({ selectedColor, onColorChange }) {
             autoStart: true,
             loop: true,
           }}
-        />
+          />
       </p>
-      <img
-        src={colorToImageMap[selectedColor]}
-        alt="memoji"
-        className="memoji"
-      />
     </div>
+    <div className='memojicontainer'>
+        <img
+          src={colorToImageMap[selectedColor]}
+          alt="memoji"
+          className="memoji"
+          />
+
+    </div>
+    </>
   )
 }

@@ -20,7 +20,7 @@ export default function Sidebar() {
       </a>
       <a href="https://www.linkedin.com/in/-trevorcampbell" target="_blank" rel="noopener noreferrer">
       </a>
-      <Link to="contact" offset={-65} smooth={true} duration={1000} className='navlink'>
+      <Link to="contact" offset={-190} smooth={true} duration={1000} className='navlink'>
         <MdEmail />
           Contact
       </Link>
