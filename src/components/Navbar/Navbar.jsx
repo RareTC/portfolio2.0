@@ -87,7 +87,7 @@ export default function Navbar({ selectedColor, onColorChange }) {
           styles={customStyles}
           />
         </div>
-        <Link to='welcome' smooth={true} duration={1000} className='navlink'>
+        <Link to='welcome' smooth={true} duration={1000} id='navlogo'>
           <img className='logo' src={Logo} alt="" />
         </Link>
         <Link to="home" offset={-58} smooth={true} duration={1000} className='navlink'> Home </Link>

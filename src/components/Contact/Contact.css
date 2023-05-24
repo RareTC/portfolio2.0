@@ -177,5 +177,10 @@ textarea {
     width: 250px ;
     resize: none;
   }
+
+  .formcontainer {
+    background-color: transparent;
+    box-shadow: none;
+  }
   
 }

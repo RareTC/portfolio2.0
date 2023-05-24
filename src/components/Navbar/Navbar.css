@@ -23,6 +23,10 @@
     filter: invert(91%) sepia(50%) saturate(6%) hue-rotate(257deg) brightness(110%) contrast(96%);
 }
 
+#navlogo:hover {
+    border: none;
+}
+
 .theme {
     display: flex;
     flex-direction: column;

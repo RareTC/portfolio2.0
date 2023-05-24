@@ -138,6 +138,19 @@
         width: 150px;
         height: 150px;
     }
+
+    .skills {
+        font-size: 40px;
+    }
+
+    .icon-text {
+        font-size: 15px;
+    }
+
+    .icon-text svg {
+        height: 40px;
+        width: 26px;
+    }
     
     .about {
         padding-top: 0px;

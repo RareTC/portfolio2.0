@@ -62,6 +62,7 @@
         flex-direction: column;
         margin-bottom: 0;
         padding-right: 30px;
+        text-align: center;
     }
 
     .aboutPhoto img {
