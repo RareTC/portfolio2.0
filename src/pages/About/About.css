@@ -12,7 +12,7 @@
     margin-right: 60px;
     border: solid 3px;
     border-radius: 25px;
-    border: solid 3px var(--color3);
+    border: solid 3px var(--color0);
 } 
 
 .aboutSection {
@@ -20,7 +20,7 @@
     padding-right: 3%;
     padding-bottom: 3%;
     font-size: 18px;
-    color: var(--color3);
+    color: var(--color0);
 }
 
 .aboutSection h2 {
@@ -28,7 +28,6 @@
     font-size: 40px;
     text-align: center;
     color: var(--color0);
-    text-shadow: 2px 2px 4px var(--color3);
 }
 
 @media only screen and (max-width: 1000px) {

@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   flex-basis: 45%;
-  background-color: var(--color3);
+  background-color: var(--color0);
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding-top: 8px;
@@ -65,15 +65,16 @@
 .project-btn {
   width: 120px;
   padding: 10px;
-  background-color: var(--color1);
+  background-color: var(--color2);
   border: none;
-  color: var(--color4);
+  color: var(--color0);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
 }
 
 .project-btn:hover {

@@ -35,7 +35,7 @@
   font-weight: 800;
   letter-spacing: 1px;
   background-color: var(--color4);
-  border: solid 2px var(--color1);
+  border: solid 2px var(--color4);
   color: var(--color0);
 }
 
