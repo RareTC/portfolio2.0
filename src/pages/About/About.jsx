@@ -15,15 +15,14 @@ export default function About() {
         <h2>About Me</h2>
           <p>
           Hi there, I'm Trevor, a Software Developer with a passion for creating sleek and user-friendly interfaces.
-          When I'm not coding, you'll catch me at the beach playing volleyball with my dog Cooper.
+          When I'm not coding, you'll catch me at the beach playing volleyball with my trusty sidekick, Cooper.
           </p>
           <p>
-          I have a keen eye for the details others overlook.
-          Before diving into Software Development, I worked as a Nurse in Heart Surgery, honing my eye for detail and teamwork.
-          With a background in healthcare and a knack for coding, I bring creativity and innovation to everything I do.
+          I have a knack for noticing the little things. 
+          Drawing from my previous career in Heart Surgery, I bring a unique perspective and a splash of innovation to everything I do.
           </p>
           <p>
-            Let's create something amazing together!
+            Let's create something amazing!
           </p>
       </div>
     </div>
