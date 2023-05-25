@@ -14,20 +14,16 @@ export default function About() {
       <div className='aboutSection'>
         <h2>About Me</h2>
           <p>
-          Hi, I'm Trevor! As a Full Stack Developer, I'm passionate about creating sleek and user-friendly interfaces.
-          When I'm not working, you can usually find me at the beach playing volleyball with my dog Cooper.
+          Hi there, I'm Trevor, a Software Developer with a passion for creating sleek and user-friendly interfaces.
+          When I'm not coding, you'll catch me at the beach playing volleyball with my dog Cooper.
           </p>
           <p>
-          As a detail-oriented person, I enjoy examining details others might overlook and am constantly seeking ways to improve. I'm always on the lookout for new and unique
-           approaches to problems, and I'm not afraid to think outside the box.
+          I have a keen eye for the details others overlook.
+          Before diving into Software Development, I worked as a Nurse in Heart Surgery, honing my eye for detail and teamwork.
+          With a background in healthcare and a knack for coding, I bring creativity and innovation to everything I do.
           </p>
           <p>
-          Before diving into Software Development, I worked as a Nurse in Heart Surgery, gaining valuable experience working on teams, communicating, and meticulous documentation.
-           I learned the importance of being flexible in high-pressure environments a skill that has served me well in my current role.
-          </p>
-          <p>
-          Overall, I'm someone who is passionate about delivering high-quality work and making a positive impact. My unique background, combined with my skills in Software Development,
-           make me a well-rounded individual who is dedicated to bringing creativity and innovation to everything I do.   
+            Let's create something amazing together!
           </p>
       </div>
     </div>

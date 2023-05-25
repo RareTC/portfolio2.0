@@ -119,6 +119,11 @@
     animation: slideInButton 1s ease forwards; 
     animation: wobble 1s 1s ease forwards;
 }
+#grey {
+    background-color: grey;
+    animation: slideInButton 1s ease forwards; 
+    animation: wobble 1s 1s ease forwards;
+}
 
     
     
