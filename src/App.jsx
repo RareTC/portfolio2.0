@@ -31,8 +31,8 @@ export default function App() {
     blue: ['#F8F9F9', '#41B1FC', '#3c92b3','#AEBAB3', '#285f87'],
     red: ['#F2F0EC', '#F09393', '#B4223A', '#9F6C66', '#2D212C'],
     orange: ['#F2F2EF', '#e98522', '#ce5615', '#ca6f4d', '#222128'],
-    yellow: ['#EFF4EF', '#F2F747', '#DFCD2E', '#BEA944', '#3E6669'],
-    pink: ['#F8F5F7', '#ee60a1', '#be2177', '#A296B3', '#843574'],
+    yellow: ['#09132d', '#F2F747', '#DFCD2E', '#BEA944', '#3E6669'],
+    pink: ['#F8F5F7', '#ee60a1', '#be2177', '#b67fab', '#3c1943'],
   };
 
   return (
