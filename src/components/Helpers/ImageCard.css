@@ -1,3 +1,13 @@
+.projects {
+  text-align: center;
+  color: var(--color0);
+  font-size: 65px;
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+  background-color: var(--color2);
+}
+
 .projectList {
   height: auto;
   display: flex;
@@ -5,7 +15,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding:40px 20px;
+  /* padding:40px 20px; */
   background-color: var(--color2);
 }
 
@@ -15,9 +25,9 @@
   align-items: center;
   justify-content: center;
   flex-basis: 45%;
-  background-color: var(--color0);
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  /* background-color: var(--color0); */
+  /* border-radius: 8px; */
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
   padding-top: 8px;
   margin-top: 0;
   max-width: max-content;
@@ -25,7 +35,7 @@
 
 .image {
   height: 50%;
-  width: 75%;
+  width: 85%;
   border-radius: 8px;
 }
 
@@ -34,20 +44,20 @@
   padding-bottom: 15px;
   font-size: 24px;
   font-weight: 1000;
-  color: var(--color4);
+  color: var(--color0);
 }
 
 .project-desc {
   text-align: center;
   margin-top: 14px;
-  padding-left:20px;
-  padding-right:20px;
-  color: var(--color4);
+  padding-left:10px;
+  padding-right:10px;
+  color: var(--color0);
   font-weight: 500;
 }
 
 .project-skills {
-  color: var(--color4);
+  color: var(--color0);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left:20px;
@@ -62,16 +72,23 @@
   padding-bottom: 10px;
 }
 
+.cardicon {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
 .project-btn {
   width: 120px;
-  padding: 10px;
-  background-color: var(--color2);
+  background-color: var(--color1);
   border: none;
-  color: var(--color0);
-  padding-left: 10px;
+  color: var(--color4);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 15px; */
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   font-weight: 900;
@@ -96,6 +113,20 @@
 }
 
 @media only screen and (max-width:650px) {
+
+  .projects {
+    font-size: 40px;
+  }
+
+  .image{
+    width: 100%;
+  }
+
+  .project-desc {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .projectList {
     gap: 20px;
     padding:20px 0;
@@ -103,6 +134,13 @@
   .projectItem {
     flex-basis: 80%;
   }
+
+  .projectItem {
+    padding-bottom: 10px;
+    border-bottom: solid 1px;
+    border-color: var(--color0);
+  }
+
   .project-btn-wrap {
     gap: 20px;
 

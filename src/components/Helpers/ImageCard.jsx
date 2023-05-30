@@ -1,9 +1,12 @@
 import './ImageCard.css';
+import { FaGithub } from 'react-icons/fa';
+
 
 
 export default function ImageCard({ cards }) {
     return (
         <>
+            <h1 className='projects'>Projects</h1>
             <div className="projectList">
                 {cards.map((card, index) => (
                     <div className="projectItem" key={index}>
@@ -20,13 +23,13 @@ export default function ImageCard({ cards }) {
                                 className="project-btn"
                                 onClick={() => window.open(card.git)}
                             >
-                                Code
+                                < FaGithub className='cardicon'/>
                             </button>
                             <button
                                 className="project-btn"
                                 onClick={() => window.open(card.site)}
                             >
-                                Site
+                                Demo
                             </button>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ const projects = [
        name: 'MAKEME.md',
        image: Makeme,
        skills: 'ReactJS, NodeJS, MongoDB, Express, HTML, CSS',
-       desc: `A side by side rendering of Markdown to Readme.md's, with easy to add components and ready to use templates. Increased Markdown writing efficiency and accuracy.`,
+       desc: `A side by side rendering of Markdown to Readme, with easy to add components and ready to use templates. Increased Markdown writing efficiency and accuracy.`,
        git: 'https://github.com/RareTC/makeme/tree/main#readme',
        site: 'https://makeme.herokuapp.com/',
    },
