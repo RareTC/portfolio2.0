@@ -4,11 +4,14 @@
     align-items: center;
     justify-content: center;
     height: 58vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .bubbles {
     position: relative;
     display: flex;
+    justify-content: flex-start;
     z-index: 0;
 }
 .bubbles span {
@@ -96,7 +99,7 @@
 
 #h3 {
     position: relative;
-    color: var(--color1);
+    color: var(--color0);
     z-index: 2;
 }
 
