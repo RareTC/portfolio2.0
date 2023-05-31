@@ -7,7 +7,7 @@
 }
 
 .bubbles {
-    position: absolute;
+    position: relative;
     display: flex;
     width: auto;
     z-index: 0;
@@ -47,6 +47,7 @@
 }
 
 .memojicontainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -95,11 +96,13 @@
 }
 
 #h3 {
+    position: relative;
     color: var(--color1);
     z-index: 2;
 }
 
 .typewriter {
+    position: relative;
     color: var(--color0) !important;
     z-index: 2;
 }
