@@ -9,9 +9,7 @@
 .bubbles {
     position: relative;
     display: flex;
-    width: auto;
     z-index: 0;
-    overflow-y: hidden;
 }
 .bubbles span {
     position: relative;
