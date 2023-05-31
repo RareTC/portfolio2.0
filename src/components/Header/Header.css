@@ -25,9 +25,9 @@
 }
 .bubbles span:nth-child(even) {
     background-color: var(--color1);
-    box-shadow: 0 0 0 0px var(--color3),
-    0 0 20px var(--color2),
-    0 0 60px var(--color2);
+    box-shadow: 0 0 0 0px var(--color2),
+    0 0 20px var(--color3),
+    0 0 60px var(--color3);
 }
 .bubbles span:nth-child(3n+2) {
     background-color: var(--color3);
