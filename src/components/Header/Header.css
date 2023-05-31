@@ -17,23 +17,23 @@
     background-color: var(--color2);
     margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 0 0 0 10 px var(--color2),
-     0 0 50px var(--color2),
-     0 0 100px var(--color2);
+    box-shadow: 0 0 0px var(--color3),
+     0 0 18px var(--color2),
+     0 0 50px var(--color2);
      animation: bubbles 15s linear infinite;
      animation-duration: calc(190s / var(--i));
 }
 .bubbles span:nth-child(even) {
     background-color: var(--color1);
-    box-shadow: 0 0 0 10 px var(--color3),
-    0 0 50px var(--color2),
-    0 0 100px var(--color3);
+    box-shadow: 0 0 0 0px var(--color3),
+    0 0 20px var(--color2),
+    0 0 60px var(--color2);
 }
 .bubbles span:nth-child(3n+2) {
     background-color: var(--color3);
-    box-shadow: 0 0 0 10 px var(--color3),
-    0 0 50px var(--color2),
-    0 0 100px var(--color3);
+    box-shadow: 0 0 0 0px var(--color2),
+    0 0 25px var(--color3),
+    0 0 50px var(--color3);
 }
 @keyframes bubbles{
     0% {
@@ -93,6 +93,10 @@
 #h3 {
     color: var(--color1);
     z-index: 1;
+}
+
+.typewriter {
+    color: var(--color0) !important;
 }
 
 @keyframes bounce {
