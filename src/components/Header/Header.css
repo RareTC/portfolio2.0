@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: center;
     height: 58vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .bubbles {
@@ -43,7 +44,7 @@
 }
 @keyframes bubbles{
     0% {
-        transform: translateY(40vh) scale(0);
+        transform: translateY(50vh) scale(0);
     }
     100% {
         transform: translateY(-30vh) scale(1);
