@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 85vh;
+    -webkit-height: 85vh;
   }
   
   .resume-image {
@@ -16,13 +17,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 125px;
-    border-radius: 20px;
-    margin-top: 10px;
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 9px;
     border: none;
-    padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: var(--color1);
+    color: var(--color4);
   }
 
   .resume-download:hover {

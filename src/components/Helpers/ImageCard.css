@@ -141,6 +141,10 @@
     border-color: var(--color0);
   }
 
+  .projectItem:last-child{
+    border-bottom: none;
+  }
+
   .project-btn-wrap {
     gap: 20px;
 

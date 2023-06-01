@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 0;
 }
 .bubbles span {
     position: relative;
@@ -25,29 +25,32 @@
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0px var(--color3),
-     0 0 18px var(--color2),
-     0 0 50px var(--color2);
-     animation: bubbles 15s linear infinite;
-     animation-duration: calc(190s / var(--i));
+    0 0 18px var(--color2),
+    0 0 50px var(--color2);
+    animation: bubbles 15s linear infinite;
+    animation-duration: calc(190s / var(--i));
+    z-index: 0;
 }
 .bubbles span:nth-child(even) {
     background-color: var(--color1);
     box-shadow: 0 0 0 0px var(--color2),
     0 0 20px var(--color3),
     0 0 60px var(--color3);
+    z-index: 0;
 }
 .bubbles span:nth-child(3n+2) {
     background-color: var(--color3);
     box-shadow: 0 0 0 0px var(--color2),
     0 0 25px var(--color3),
     0 0 50px var(--color3);
+    z-index: 0;
 }
 @keyframes bubbles{
     0% {
-        transform: translateY(50vh) scale(0);
+        transform: translateY(40vh) scale(0);
     }
     100% {
-        transform: translateY(-30vh) scale(1);
+        transform: translateY(-60vh) scale(1);
     }
 }
 
@@ -56,7 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    z-index: 2;
+    z-index: 5;
 }
 
 .memoji {
@@ -66,6 +69,7 @@
     z-index: 2;
     width: 210px;
     height: 210px;
+    z-index: 5;
 }
 
 .rainbowarch {
@@ -97,13 +101,13 @@
     top: -100px; 
     opacity: 0; 
     animation: bounce 2s ease 1s forwards; 
-    z-index: 2;
+    z-index: 5 !important;
 }
 
 #h3 {
     position: relative;
     color: var(--color0);
-    z-index: 2;
+    z-index: 5 !important;
 }
 
 @keyframes bounce {
@@ -238,7 +242,7 @@
     font-weight: 800;
     position: relative;
     bottom: -20%;
-    z-index: 2;
+    z-index: 5;
 }
 
 @media only screen and (max-width: 1650px) {
@@ -278,11 +282,11 @@
 
 @media only screen and (max-width: 650px) {
     .bubbles {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .bubbles span{
-        width: 5px;
-        height: 5px;
+        width: 10px;
+        height: 10px;
     }
     .welcome {
         height: 40vh;
@@ -323,6 +327,15 @@
         100% {
             transform: scale(.95);
             box-shadow: 0 0 0 0 var(--color2);
+        }
+    }
+
+    @keyframes bubbles{
+        0% {
+            transform: translateY(1vh) scale(0);
+        }
+        100% {
+            transform: translateY(-40vh) scale(1);
         }
     }
     

@@ -15,7 +15,7 @@ export default function ResumeView() {
         <img className="resume-image" src={Resume} alt='resume' />
         <button className='resume-download' onClick={() => window.open(Resumepdf)}>
           <DownloadIcon />
-          Download CV 
+          Download
         </button>
       </div>
     </>

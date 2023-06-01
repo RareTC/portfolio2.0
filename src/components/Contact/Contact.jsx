@@ -40,8 +40,8 @@ export default function Contact() {
         <div className='formcontainer' id='contact'>
           {!emailSent && (
             <>
-              <h1>Say Hello!</h1>
-              <h3>I look forward to hearing from you!</h3>
+              <h1>Contact Me</h1>
+              {/* <h3>I look forward to hearing from you!</h3> */}
               <div className='emailform'>
                 <form ref={form} onSubmit={sendEmail}>
                   <div className='inputform'>

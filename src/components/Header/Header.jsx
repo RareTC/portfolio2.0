@@ -27,43 +27,6 @@ export default function Header({ selectedColor, onColorChange }) {
   return (
     <>
     <div className='welcome'>
-      <div className='bubbles'>
-        <span style={{ "--i": 11 }}></span>
-        <span style={{ "--i": 12 }}></span>
-        <span style={{ "--i": 24 }}></span>
-        <span style={{ "--i": 10 }}></span>
-        <span style={{ "--i": 14 }}></span>
-        <span style={{ "--i": 23 }}></span>
-        <span style={{ "--i": 18 }}></span>
-        <span style={{ "--i": 19 }}></span>
-        <span style={{ "--i": 16 }}></span>
-        <span style={{ "--i": 17 }}></span>
-        <span style={{ "--i": 22 }}></span>
-        <span style={{ "--i": 9 }}></span>
-        <span style={{ "--i": 7 }}></span>
-        <span style={{ "--i": 15 }}></span>
-        <span style={{ "--i": 12 }}></span>
-        <span style={{ "--i": 24 }}></span>
-        <span style={{ "--i": 10 }}></span>
-        <span style={{ "--i": 14 }}></span>
-        <span style={{ "--i": 23 }}></span>
-        <span style={{ "--i": 18 }}></span>
-        <span style={{ "--i": 19 }}></span>
-        <span style={{ "--i": 16 }}></span>
-        <span style={{ "--i": 17 }}></span>
-        <span style={{ "--i": 22 }}></span>
-        <span style={{ "--i": 9 }}></span>
-        <span style={{ "--i": 7 }}></span>
-        <span style={{ "--i": 15 }}></span>
-        <span style={{ "--i": 12 }}></span>
-        <span style={{ "--i": 21 }}></span>
-        <span style={{ "--i": 28 }}></span>
-        <span style={{ "--i": 20 }}></span>
-        <span style={{ "--i": 5 }}></span>
-        <span style={{ "--i": 3 }}></span>
-        <span style={{ "--i": 14 }}></span>
-        <span style={{ "--i": 20 }}></span>
-      </div>
       <h3 id='h3'>Pick Your Favorite Color To Add Some Life</h3>
       <div className='rainbowarch'>
           <button className={`${selectedColor === 'red' ? 'pulse' : ''}`}
@@ -108,14 +71,34 @@ export default function Header({ selectedColor, onColorChange }) {
           }}
           />
       </p>
-    </div>
+      </div>
+      <div className='bubbles'>
+        <span style={{ "--i": 11 }}></span>
+        <span style={{ "--i": 12 }}></span>
+        <span style={{ "--i": 16 }}></span>
+        <span style={{ "--i": 10 }}></span>
+        <span style={{ "--i": 14 }}></span>
+        <span style={{ "--i": 20 }}></span>
+        <span style={{ "--i": 18 }}></span>
+        <span style={{ "--i": 7 }}></span>
+        <span style={{ "--i": 9 }}></span>
+        <span style={{ "--i": 16 }}></span>
+        <span style={{ "--i": 15 }}></span>
+        <span style={{ "--i": 12 }}></span>
+        <span style={{ "--i": 11 }}></span>
+        <span style={{ "--i": 17 }}></span>
+        <span style={{ "--i": 5 }}></span>
+        <span style={{ "--i": 12 }}></span>
+        <span style={{ "--i": 11 }}></span>
+        <span style={{ "--i": 14 }}></span>
+        <span style={{ "--i": 20 }}></span>
+      </div>
     <div className='memojicontainer'>
         <img
           src={colorToImageMap[selectedColor]}
           alt="memoji"
           className="memoji"
           />
-
     </div>
     </>
   )

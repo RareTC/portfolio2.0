@@ -28,7 +28,7 @@ export default function App() {
     grey: ['#DDDBCC', '#5f8d9e', '#495868', '#8f8f8f', '#1C2120'],
     green: ['#EFF1EE', '#58DA72', '#179c78', '#688482', '#1a222a'],
     purple: ['#ECE8E6', '#62569e', '#64075C', '#966A7F', '#241829'],
-    blue: ['#F8F9F9', '#41B1FC', '#3c92b3','#AEBAB3', '#285f87'],
+    blue: ['#F8F9F9', '#41B1FC', '#3c92b3','#AEBAB3', '#213B55'],
     red: ['#F2F0EC', '#F09393', '#B4223A', '#9F6C66', '#2D212C'],
     orange: ['#F2F2EF', '#e98522', '#ce5615', '#ca6f4d', '#222128'],
     yellow: ['#09132d', '#F2F747', '#DFCD2E', '#BEA944', '#3E6669'],

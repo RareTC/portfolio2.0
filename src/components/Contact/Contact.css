@@ -11,11 +11,14 @@
 }
 
 .formcontainer {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
   border-radius: 8px;
   padding: 20px;
-  background-color: var(--color3);
+  /* background-color: var(--color3); */
   margin-right: 20px;
+  background-color: rgba(255,255,255,0.13);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
 }
 
 .contactForm h1, h3, label {
@@ -30,19 +33,22 @@
   outline: none;
   width: 230px;
   padding: 13px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   font-size: 15px;
   font-weight: 800;
   letter-spacing: 1px;
-  background-color: var(--color4);
-  border: solid 2px var(--color4);
+  /* background-color: var(--color4); */
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px var(--color0);
   color: var(--color0);
 }
 
 .contactForm input[type=text]::placeholder,[type=email]::placeholder,
 .contactForm textarea::placeholder {
 text-align: center;
-color: var(--color3)
+color: var(--color4);
+opacity: 0.5;
 }
 
 textarea {
@@ -58,8 +64,7 @@ textarea {
 }
 
 .contactForm input:focus, textarea:focus {
-  border: 2px solid var(--color1);
-  border-radius: 8px;
+  border-bottom: 2px solid var(--color4);
   color: var(--color0);
 }
 
@@ -70,7 +75,7 @@ textarea {
   border: none;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 100px;
+  width: 200px;
   height: 30px;
   border-radius: 8px;
   padding: 20px;
@@ -99,12 +104,12 @@ textarea {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 30px;
+  font-size: 23px;
   padding: 10px;
   border-radius: 4px;
-  width: 250px;
-  -webkit-animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  width: 100%;
+  -webkit-animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
 @-webkit-keyframes swing-in-top-fwd {
@@ -153,6 +158,11 @@ textarea {
 
 @media screen and (max-width:550px) {
 
+  .formcontainer{
+    background-color: none;
+    border: none;
+  }
+
   .contactForm {
     width: 100% !important;
   }
@@ -181,6 +191,10 @@ textarea {
   .formcontainer {
     background-color: transparent;
     box-shadow: none;
+  }
+
+  .contactForm input , textarea {
+    width: 80vw;
   }
   
 }
