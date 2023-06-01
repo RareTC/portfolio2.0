@@ -105,12 +105,6 @@
     z-index: 2;
 }
 
-.typewriter {
-    position: relative;
-    color: var(--color0) !important;
-    z-index: 2;
-}
-
 @keyframes bounce {
     0% {
         top: -100px;
@@ -239,10 +233,11 @@
 
 .typewriter {
     font-size: 26px !important;
-    color: var(--color3);
+    color: var(--color0);
     font-weight: 800;
     position: relative;
     bottom: -20%;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 1650px) {
