@@ -47,7 +47,7 @@
 }
 @keyframes bubbles{
     0% {
-        transform: translateY(40vh) scale(0);
+        transform: translateY(17vh) scale(0);
     }
     100% {
         transform: translateY(-60vh) scale(1);
