@@ -86,8 +86,7 @@
 
     .links {
         flex-direction: row;
-        justify-content: flex-start;
-        padding-left: 50px;
+        justify-content: center;
     }
 
     .logo {
@@ -110,8 +109,8 @@
 
     .links {
         flex-direction: row;
-        justify-content: flex-start;
-        padding-left: 50px;
+        justify-content: center;
+        padding-right: 20px;
     }
 
     .logo {
