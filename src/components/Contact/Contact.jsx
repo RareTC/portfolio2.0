@@ -3,9 +3,16 @@ import emailjs from '@emailjs/browser';
 import './Contact.css';
 import SendIcon from '@mui/icons-material/Send';
 import Resume from '../ResumeView/ResumeView';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 export default function Contact() {
+  
+  useEffect(()=> {
+    AOS.init({duration: 2000});
+  },[])
 
   const [emailSent, setEmailSent] = useState(false);
   const form = useRef();
@@ -37,7 +44,7 @@ export default function Contact() {
   return (
     <>
       <div className='contactForm'>
-        <div className='formcontainer' id='contact'>
+        <div className='formcontainer' id='contact' data-aos="fade-right">
           {!emailSent && (
             <>
               <h1>Contact Me</h1>
