@@ -7,6 +7,14 @@ import Concentration from '../../assets/concentration.png';
 
   
 const projects = [
+    {
+        name: 'MAKEME.md',
+        image: Makeme,
+        skills: 'ReactJS, NodeJS, MongoDB, Express, HTML, CSS',
+        desc: `A side by side rendering of Markdown to Readme, with easy to add components and ready to use templates. Increased Markdown writing efficiency and accuracy.`,
+        git: 'https://github.com/RareTC/makeme/tree/main#readme',
+        site: 'https://makeme.herokuapp.com/',
+    },
    {
        name: 'Mockup Magic',
        image: MockupMagic,
@@ -14,14 +22,6 @@ const projects = [
        desc: 'A website color palette generator, that applies the scheme to wireframes and components instantly. Significantly reducing planning stage of product development.',
        git: 'https://github.com/RareTC/mockup-magic#readme',
        site: 'https://mockup-magic.herokuapp.com/',
-   },
-   {
-       name: 'MAKEME.md',
-       image: Makeme,
-       skills: 'ReactJS, NodeJS, MongoDB, Express, HTML, CSS',
-       desc: `A side by side rendering of Markdown to Readme, with easy to add components and ready to use templates. Increased Markdown writing efficiency and accuracy.`,
-       git: 'https://github.com/RareTC/makeme/tree/main#readme',
-       site: 'https://makeme.herokuapp.com/',
    },
    {
        name: 'Market Sense',

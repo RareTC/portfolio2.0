@@ -13,16 +13,12 @@ export default function ImageCard({ cards }) {
     return (
         <>
             <div className='projectcontainer'>
-                <h1 className='projects' data-aos="zoom-in">Projects</h1>
+                <h1 className='projects' data-aos="fade-down">Projects</h1>
                 <div className="projectList">
                     {cards.map((card, index) => (
                         <div className="projectItem" key={index} data-aos="zoom-in">
                             <h1 className="project-title">{card.name}</h1>
                             <img src={card.image} alt="" className='image' />
-                            {/* <div
-                            style={{ backgroundImage: `url(${card.image})` }}
-                            className="bgImage"
-                        ></div> */}
                             <p className="project-desc">{card.desc}</p>
                             <p className="project-skills">{card.skills}</p>
                             <div className="project-btn-wrap">

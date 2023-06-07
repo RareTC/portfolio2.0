@@ -19,9 +19,6 @@ export default function Navbar({ selectedColor, onColorChange }) {
     { value: 'pink', label: 'pink'},
   ]
 
-  // const section1 = useScrollSection('section1');
-  // const section2 = useScrollSection('section2');
-
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
