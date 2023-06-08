@@ -13,7 +13,7 @@ export default function ImageCard({ cards }) {
     return (
         <>
             <div className='projectcontainer'>
-                <h1 className='projects' data-aos="fade-down">Projects</h1>
+                <h1 className='projects' data-aos="fade-in">Projects</h1>
                 <div className="projectList">
                     {cards.map((card, index) => (
                         <div className="projectItem" key={index} data-aos="zoom-in">
