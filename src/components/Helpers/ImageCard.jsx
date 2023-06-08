@@ -16,7 +16,7 @@ export default function ImageCard({ cards }) {
                 <h1 className='projects' data-aos="fade-in">Projects</h1>
                 <div className="projectList">
                     {cards.map((card, index) => (
-                        <div className="projectItem" key={index} data-aos="zoom-in">
+                        <div className="projectItem" key={index} data-aos="zoom-in" data-aos-mirror="true" data-aos-once="false">
                             <h1 className="project-title">{card.name}</h1>
                             <img src={card.image} alt="" className='image' />
                             <p className="project-desc">{card.desc}</p>

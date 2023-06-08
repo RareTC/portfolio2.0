@@ -3,11 +3,18 @@ import './Navbar.css';
 import { Link} from 'react-scroll';
 import Select from 'react-select';
 import Logo from '../../assets/tclogo.png';
+import {HiMenu, HiX} from 'react-icons/hi';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Navbar({ selectedColor, onColorChange }) {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(()=> {
+    AOS.init({duration: 1000});
+  },[])
   const options = [
     { value: 'grey', label: 'Neutral'},
     { value: 'red', label: 'red'},
@@ -53,26 +60,61 @@ export default function Navbar({ selectedColor, onColorChange }) {
 
   const getFontSize = () => {
     if (windowWidth <= 500) {
-      return '10px';
-    } else if (windowWidth <= 870) {
-      return '12px';
+      return '16px';
+    } else if (windowWidth <= 900) {
+      return '16px';
     } else {
       return '18px';
     }
   };
 
   const getWidth = () => {
-    if (windowWidth <= 500) {
-      return '70px';
-    } else if (windowWidth <= 870) {
-      return '100px';
+    if (windowWidth <= 900) {
+      return '120px';
     } else {
       return '180px';
     }
   };
 
-  return (
-    <div className='navbar'>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const renderNavbar = () => {
+    if (windowWidth <= 870) {
+      return (
+        <div className='mobilenavbar'>
+          <div className='mobilelogo'>
+            <Link to='welcome' smooth={true} duration={1000} id='navlogo'>
+              <img src={Logo} alt="logo" />
+            </Link>
+          </div>
+          <div className='mobiletheme'>
+          Theme
+            <Select
+            className='reactselect'
+            options={options}
+            onChange={(option) => onColorChange(option.value)}
+            value={options.find(option => option.value === selectedColor)}
+            styles={customStyles}
+            />
+        </div>
+        <div className='mobilemenu' onClick={toggleMenu}>
+          {isMenuOpen ? <HiX data-aos="flip-right"/> : <HiMenu data-aos='flip-left'/>}
+        </div>
+        { isMenuOpen && (
+          <div className='mobilelinks' data-aos="fade-left">
+            <Link to="home" offset={-58} smooth={true} duration={1000} className='mobilenavlink' onClick={toggleMenu}> Home </Link>
+            <Link to="projectList" offset={-170} smooth={true} duration={1000} className='mobilenavlink' onClick={toggleMenu}> Projects </Link>
+            <Link to="about" offset={-60} smooth={true} duration={1000} className='mobilenavlink' onClick={toggleMenu}> About </Link>
+            <Link to="contact" offset={-190} smooth={true} duration={1000} className='mobilenavlink' onClick={toggleMenu}> Contact </Link>
+          </div>
+        )}
+        </div>
+      )
+    } else {
+      return (
+      <div className='navbar'>
       <div className="links">
         <div className='theme'>
           Theme
@@ -85,7 +127,7 @@ export default function Navbar({ selectedColor, onColorChange }) {
           />
         </div>
         <Link to='welcome' smooth={true} duration={1000} id='navlogo'>
-          <img className='logo' src={Logo} alt="" />
+          <img className='logo' src={Logo} alt="logo" />
         </Link>
         <Link to="home" offset={-58} smooth={true} duration={1000} className='navlink'> Home </Link>
         <Link to="projectList" offset={-170} smooth={true} duration={1000} className='navlink'> Projects </Link>
@@ -93,5 +135,12 @@ export default function Navbar({ selectedColor, onColorChange }) {
         <Link to="contact" offset={-190} smooth={true} duration={1000} className='navlink'> Contact </Link>
       </div>
     </div>
+      )
+    }
+  }
+
+
+  return renderNavbar(
+
   );
 }
