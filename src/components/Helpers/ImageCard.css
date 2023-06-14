@@ -8,8 +8,7 @@
   font-size: 65px;
   padding: 0;
   padding-top: 25px;
-  margin: 0;
-  /* background-color: var(--color2); */
+  margin-top: 0;
 }
 
 .projectList {
@@ -19,8 +18,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  /* padding:40px 20px; */
   background-color: var(--color2);
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .projectItem {
@@ -29,12 +30,13 @@
   align-items: center;
   justify-content: center;
   flex-basis: 45%;
-  /* background-color: var(--color0); */
-  /* border-radius: 8px; */
-  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+  border-radius: 8px;
   padding-top: 8px;
   margin-top: 0;
   max-width: max-content;
+  background-color: rgba(255,255,255,0.13);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
 }
 
 .image {
@@ -89,10 +91,6 @@
   color: var(--color4);
   padding-top: 10px;
   padding-bottom: 10px;
-  /* padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px; */
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   font-weight: 900;
@@ -140,9 +138,8 @@
   }
 
   .projectItem {
-    padding-bottom: 10px;
-    border-bottom: solid 1px;
-    border-color: var(--color0);
+    padding-left:20px ;
+    padding-right: 20px;
   }
 
   .projectItem:last-child{
