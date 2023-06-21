@@ -129,7 +129,7 @@ export default function Navbar({ selectedColor, onColorChange }) {
             <img className='logo' src={Logo} alt="logo" />
           </Link>
           <Link to="home" offset={-58} smooth={true} duration={1000} className='navlink'> Home </Link>
-          <Link to="projectList" offset={-170} smooth={true} duration={1000} className='navlink'> Projects </Link>
+          <Link to="projectList" offset={-210} smooth={true} duration={1000} className='navlink'> Projects </Link>
           <Link to="about" offset={-60} smooth={true} duration={1000} className='navlink'> About </Link>
           <Link to="contact" offset={-190} smooth={true} duration={1000} className='navlink'> Contact </Link>
         </div>
