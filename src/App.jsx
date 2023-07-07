@@ -51,5 +51,5 @@ export default function App() {
   );
 }
 
-console.log('%cHey there! Looking for a passionate and talented developer? You found me! Let\'s chat and create something amazing together! 😄🚀', 'color: blue; font-size: 20px; font-weight: bold; background: linear-gradient(to right, #ff9900, #00ccff)');
+console.log('%cHey there! Looking for a passionate and talented developer? You found me! Let\'s chat and create something amazing together! 😄🚀', 'color: blue; font-size: 20px; font-weight: bold; background: linear-gradient(to right, #ff9900, #00ccff); padding: 10px; border-radius: 8px');
 
