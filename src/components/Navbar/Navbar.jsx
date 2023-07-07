@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import { Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 import Select from 'react-select';
 import Logo from '../../assets/tclogo.png';
 import {HiMenu, HiX} from 'react-icons/hi';

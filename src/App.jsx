@@ -11,13 +11,15 @@ import Projects from './pages/Projects/Projects';
 
 
 export default function App() {
-
+  
+  
+  
   const[selectedColor, setSelectedColor] = useState('grey');
-
-
+  
+  
   const handleColorChange = (color) => {
     setSelectedColor(color);
-
+    
     const selectedColors = colorValues[color];
     Object.entries(selectedColors).forEach(([key, value]) => {
       document.documentElement.style.setProperty(`--color${key}`, value);
@@ -34,7 +36,7 @@ export default function App() {
     yellow: ['#09132d', '#F2F747', '#DFCD2E', '#BEA944', '#3E6669'],
     pink: ['#F8F5F7', '#ee60a1', '#be2177', '#b67fab', '#3c1943'],
   };
-
+  
   return (
     <div className="App" >
       <Navbar selectedColor={selectedColor} onColorChange={handleColorChange}/>
@@ -48,4 +50,6 @@ export default function App() {
     </div>
   );
 }
+
+console.log('%cHey there! Looking for a passionate and talented developer? You found me! Let\'s chat and create something amazing together! 😄🚀', 'color: blue; font-size: 20px; font-weight: bold; background: linear-gradient(to right, #ff9900, #00ccff)');
 
